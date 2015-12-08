@@ -109,7 +109,8 @@ public class Configuration {
     }
 
 
-    public static final String BASE_OPDS_FEED = "http://www.pageturner-reader.org/opds/feeds.xml";
+//    public static final String BASE_OPDS_FEED = "http://www.pageturner-reader.org/opds/feeds.xml";
+	public static final String BASE_OPDS_FEED = "http://190.147.155.131/Bibliopedia/_catalog4/allbooks/allbooks_Page_1.xml";
 	public static final String BASE_SYNC_URL = "http://api.pageturner-reader.org/progress/";
 	public static final String KEY_SYNC_SERVER = "sync_server";
 

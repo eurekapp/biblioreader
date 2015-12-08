@@ -83,13 +83,13 @@ public class ManageSitesActivity extends RoboSherlockListActivity {
 			ContextMenuInfo menuInfo) {
 		
 		menu.add(Menu.NONE, ContextAction.EDIT.ordinal(), Menu.NONE, R.string.edit );
-		menu.add(Menu.NONE, ContextAction.DELETE.ordinal(), Menu.NONE, R.string.delete ); 
+		menu.add(Menu.NONE, ContextAction.DELETE.ordinal(), Menu.NONE, R.string.delete);
 		
 	}
 	
 	@Override
 	protected void onListItemClick(ListView l, View v, int position, long id) {
-		showEditDialog( adapter.getItem(position) );
+		showEditDialog(adapter.getItem(position));
 	}
 	
 	@Override
@@ -189,6 +189,53 @@ public class ManageSitesActivity extends RoboSherlockListActivity {
 	
 		builder.show();	
 	}
+
+//	public void storeBipo( ) {
+//
+//		final CustomOPDSSite site;
+//		final CustomOPDSSite site1;
+//		List<CustomOPDSSite> sites = new ArrayList<CustomOPDSSite>();
+//
+//			site = new CustomOPDSSite();
+//			site.setName("Bibliopedia Yopal");
+//			site.setDescription(" ");
+//			site.setUrl("http://190.147.155.131:80/Bibliopedia/_catalog/index.xml");
+//			sites.add(site);
+//
+//			final CustomOPDSSite site2 ;
+//			site2 = new CustomOPDSSite();
+//			site2.setName("Bibliopedia Drama");
+//			site2.setDescription(" ");
+//			site2.setUrl("http://190.147.155.131:80/Bibliopedia/_catalog2/index.xml");
+//			sites.add(site2);
+//
+//			final CustomOPDSSite site3 ;
+//			site3 = new CustomOPDSSite();
+//			site3.setName("Bibliopedia Ficcion");
+//			site3.setDescription(" ");
+//			site3.setUrl("http://190.147.155.131:80/Bibliopedia/_catalog3/index.xml");
+//			sites.add(site3);
+//
+//
+//			//site.setUserName("biblio");
+//			//site.setPassword("biblio");
+//
+//			//	adapter.add(site);
+//
+//
+//		site1 = new CustomOPDSSite();
+//		site1.setName("Immersive English Yopal");
+//		site1.setDescription(" ");
+//		site1.setUrl("http://190.147.155.131:80/Bibliopedia/_catalog1/index.xml");
+//		sites.add(site1);
+//		for ( int i=0; i < adapter.getCount(); i++ ) {
+//			sites.add( adapter.getItem(i));
+//		}
+//
+//		config.storeCustomOPDSSites(sites);
+//			//adapter.notifyDataSetChanged();
+//
+//	}
 
 	private class CustomOPDSSiteAdapter extends ArrayAdapter<CustomOPDSSite> {
 		public CustomOPDSSiteAdapter(List<CustomOPDSSite> sites) {

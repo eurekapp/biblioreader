@@ -22,10 +22,10 @@
           android:showAsAction="ifRoom"
           />
 
-    <item android:id="@+id/open_file"
-          android:title="@string/open_file"
-          android:icon="@drawable/file"
-           />
+    <!--<item android:id="@+id/open_file"-->
+          <!--android:title="@string/open_file"-->
+          <!--android:icon="@drawable/file"-->
+           <!--/>-->
 
     <item
         android:id="@+id/scan_books"
@@ -41,9 +41,9 @@
           android:actionViewClass="com.actionbarsherlock.widget.SearchView"
           android:showAsAction="ifRoom|collapseActionView" />
 
-    <item
-        android:id="@+id/about"
-        android:icon="@drawable/info"
-        android:title="@string/about"/>
+    <!--<item-->
+        <!--android:id="@+id/about"-->
+        <!--android:icon="@drawable/info"-->
+        <!--android:title="@string/about"/>-->
 
 </menu>

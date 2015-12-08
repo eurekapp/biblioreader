@@ -218,7 +218,7 @@ public class CatalogFragment extends RoboSherlockFragment implements LoadFeedCal
 			String href = entry.getAlternateLink().unsafeGet().getHref();
 			replaceFeed(entry, href, true);
 		} else if ( ! isEmpty( entry.getEpubLink() )) {
-            loadFakeFeek(entry);
+            loadFakeFeed(entry);
 		} else if ( ! isEmpty(entry.getAtomLink()) ) {
 			String href = entry.getAtomLink().unsafeGet().getHref();
 			replaceFeed( entry, href, false);
@@ -243,7 +243,7 @@ public class CatalogFragment extends RoboSherlockFragment implements LoadFeedCal
         ((CatalogParent) getActivity()).loadFeed(entry, href, baseURL, asDetailsFeed);
     }
 
-    private void loadFakeFeek( Entry entry ) {
+    private void loadFakeFeed( Entry entry ) {
 
         Feed fakeFeed = new Feed();
         fakeFeed.addEntry(entry);
@@ -271,7 +271,8 @@ public class CatalogFragment extends RoboSherlockFragment implements LoadFeedCal
 		try {
 			String target = url;
 			
-			if ( base != null && ! base.equals(Catalog.CUSTOM_SITES_ID)) {
+//			if ( base != null && ! base.equals(Catalog.CUSTOM_SITES_ID)) {
+            if ( base != null ) {
 				target = new URL(new URL(base), url).toString();
 			}
 
@@ -417,7 +418,7 @@ public class CatalogFragment extends RoboSherlockFragment implements LoadFeedCal
         if ( this.thumbnailCache.containsKey(imageLink.getHref() ) ) {
             return;
         } else {
-            this.thumbnailCache.put( imageLink.getHref(), context.getResources().getDrawable(R.drawable.unknown_cover));
+            this.thumbnailCache.put( imageLink.getHref(), context.getResources().getDrawable(R.drawable.unknown_cover1));
         }
 
         String href = imageLink.getHref();

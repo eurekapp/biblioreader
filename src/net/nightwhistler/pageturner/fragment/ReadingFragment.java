@@ -2240,14 +2240,14 @@ public class ReadingFragment extends RoboSherlockFragment implements
             nightMode.setVisible(false);
         }
 
-        // Only show open file item if we have a file manager installed
-        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
-        intent.setType("file/*");
-        intent.addCategory(Intent.CATEGORY_OPENABLE);
-
-        if (!isIntentAvailable(context, intent)) {
-            menu.findItem(R.id.open_file).setVisible(false);
-        }
+//        // Only show open file item if we have a file manager installed
+//        Intent intent = new Intent(Intent.ACTION_GET_CONTENT);
+//        intent.setType("file/*");
+//        intent.addCategory(Intent.CATEGORY_OPENABLE);
+//
+//        if (!isIntentAvailable(context, intent)) {
+////            menu.findItem(R.id.open_file).setVisible(false);
+//        }
 
         activity.getWindow().addFlags(
                 WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
@@ -2434,9 +2434,9 @@ public class ReadingFragment extends RoboSherlockFragment implements
                 onSearchRequested();
                 return true;
 
-            case R.id.open_file:
-                launchFileManager();
-                return true;
+//            case R.id.open_file:
+//                launchFileManager();
+//                return true;
 
             case R.id.rolling_blind:
                 startAutoScroll();
@@ -2446,9 +2446,9 @@ public class ReadingFragment extends RoboSherlockFragment implements
                 startTextToSpeech();
                 return true;
 
-            case R.id.about:
-                dialogFactory.buildAboutDialog().show();
-                return true;
+//            case R.id.about:
+//                dialogFactory.buildAboutDialog().show();
+//                return true;
 
             case R.id.add_bookmark:
                 FragmentTransaction ft = getFragmentManager().beginTransaction();

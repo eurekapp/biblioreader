@@ -42,4 +42,5 @@ public class LibraryActivity extends PageTurnerActivity {
         libraryFragment.onSearchRequested();
         return true;
     }
+
 }

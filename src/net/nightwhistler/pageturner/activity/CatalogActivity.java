@@ -42,6 +42,8 @@ import org.slf4j.LoggerFactory;
 import roboguice.inject.InjectFragment;
 
 import javax.annotation.Nullable;
+
+import java.util.ArrayList;
 import java.util.List;
 
 import static jedi.functional.FunctionalPrimitives.isEmpty;
@@ -72,6 +74,7 @@ public class CatalogActivity extends PageTurnerActivity implements CatalogParent
     protected void onCreatePageTurnerActivity(Bundle savedInstanceState) {
         hideDetailsView();
 
+        //loadCustomSitesFeed();
         loadFeed( null, config.getBaseOPDSFeed(), null, false );
         fragmentManager.addOnBackStackChangedListener( this::onBackStackChanged );
     }
@@ -116,6 +119,7 @@ public class CatalogActivity extends PageTurnerActivity implements CatalogParent
          * the back-stack. We do want to restore its title
          * when the stack becomes empty, so we save it here.
          */
+
         if ( fragmentManager.getBackStackEntryCount() == 0 ) {
             this.baseFeedTitle = feed.getTitle();
         }
@@ -163,15 +167,18 @@ public class CatalogActivity extends PageTurnerActivity implements CatalogParent
 
     @Override
     public void loadCustomSitesFeed() {
+        CatalogFragment newCatalogFragment = fragmentProvider.get();
 
         List<CustomOPDSSite> sites = config.getCustomOPDSSites();
 
         if ( sites.isEmpty() ) {
-            Toast.makeText(this, R.string.no_custom_sites, Toast.LENGTH_LONG).show();
+            //Toast.makeText(this, R.string.no_custom_sites, Toast.LENGTH_LONG).show();
+            //si no tiene sites le agrego el de biblio
+            CustomOPDSSite site = new CustomOPDSSite();
+            storeBipo();
             return;
         }
 
-        CatalogFragment newCatalogFragment = fragmentProvider.get();
 
         Feed customSites = new Feed();
         customSites.setURL(Catalog.CUSTOM_SITES_ID);
@@ -209,7 +216,7 @@ public class CatalogActivity extends PageTurnerActivity implements CatalogParent
         fragmentTransaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
         CatalogFragment newCatalogFragment = fragmentProvider.get();
-        newCatalogFragment.setBaseURL( baseURL );
+        newCatalogFragment.setBaseURL(baseURL);
 
         fragmentTransaction.replace(R.id.fragment_catalog, newCatalogFragment, baseURL);
 
@@ -229,7 +236,7 @@ public class CatalogActivity extends PageTurnerActivity implements CatalogParent
         }
 
         FragmentManager.BackStackEntry entry = fragmentManager.getBackStackEntryAt(
-                fragmentManager.getBackStackEntryCount() - 1 );
+                fragmentManager.getBackStackEntryCount() - 1);
 
 
         Option<Fragment> result = option(fragmentManager.findFragmentByTag(entry.getName()));
@@ -245,9 +252,9 @@ public class CatalogActivity extends PageTurnerActivity implements CatalogParent
     @Override
     public boolean onSearchRequested() {
 
-        Option<Boolean> result = getCurrentVisibleFragment().map( fragment -> {
+        Option<Boolean> result = getCurrentVisibleFragment().map(fragment -> {
 
-            if ( fragment instanceof CatalogFragment ) {
+            if (fragment instanceof CatalogFragment) {
                 CatalogFragment catalogFragment = (CatalogFragment) fragment;
 
                 catalogFragment.onSearchRequested();
@@ -265,5 +272,54 @@ public class CatalogActivity extends PageTurnerActivity implements CatalogParent
         hideDetailsView();
         super.onBackPressed();
     }
+    public void storeBipo( ) {
+
+
+
+        final CustomOPDSSite site;
+        final CustomOPDSSite site1;
+        List<CustomOPDSSite> sites = new ArrayList<CustomOPDSSite>();
+
+        site = new CustomOPDSSite();
+
+        site.setName("Bibliopedia Yopal");
+        site.setDescription(" ");
+        site.setUrl("http://190.147.155.131:80/Bibliopedia/_catalog/index.xml");
+        sites.add(site);
+
+        final CustomOPDSSite site2 ;
+        site2 = new CustomOPDSSite();
+        site2.setName("Bibliopedia Drama");
+        site2.setDescription(" ");
+        site2.setUrl("http://190.147.155.131:80/Bibliopedia/_catalog2/index.xml");
+        sites.add(site2);
+
+        final CustomOPDSSite site3 ;
+        site3 = new CustomOPDSSite();
+        site3.setName("Bibliopedia Ficcion");
+        site3.setDescription(" ");
+        site3.setUrl("http://190.147.155.131:80/Bibliopedia/_catalog3/index.xml");
+        sites.add(site3);
+
+
+
+        site1 = new CustomOPDSSite();
+        site1.setName("Immersive English Yopal");
+        site1.setDescription(" ");
+        site1.setUrl("http://190.147.155.131:80/Bibliopedia/_catalog1/index.xml");
+        sites.add(site1);
+        //site.setUserName("biblio");
+        //site.setPassword("biblio");
+
+        //	adapter.add(site);
+
+
+
+
+        config.storeCustomOPDSSites(sites);
+        //adapter.notifyDataSetChanged();
+    }
+
+
 
 }

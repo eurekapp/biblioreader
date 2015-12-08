@@ -155,20 +155,21 @@ public class BookDetailsFragment extends RoboSherlockFragment implements LoadFee
 
         Option<Link> buyLink = entry.getBuyLink();
 
-        if ( !isEmpty( buyLink ) ) {
-            buyNowButton.setOnClickListener( v -> {
-                String url = buyLink.unsafeGet().getHref();
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
-            });
-        } else {
+//        //no buy
+//        if ( !isEmpty( buyLink ) ) {
+//            buyNowButton.setOnClickListener( v -> {
+//                String url = buyLink.unsafeGet().getHref();
+//                Intent i = new Intent(Intent.ACTION_VIEW);
+//                i.setData(Uri.parse(url));
+//                startActivity(i);
+//            });
+//        } else {
             buyNowButton.setVisibility(View.GONE);
 
             if ( divider != null ) {
                 divider.setVisibility(View.GONE);
             }
-        }
+//        }
 
         if (entry.getAuthor() != null) {
             String authorText = String.format(

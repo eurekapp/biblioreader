@@ -85,9 +85,11 @@ public class LoadOPDSTask extends QueueableAsyncTask<String, Object, Feed> {
 		String baseUrl = params[0];
 
 		if (baseUrl == null || baseUrl.trim().length() == 0) {
-			return none();
+            Feed feed = new Feed();
+            addCustomSitesEntry(feed);
+            return some(feed);
 		}
-
+//todo de aca para abajo queda sin usar
         boolean isBaseFeed = baseUrl.equals(config.getBaseOPDSFeed());
 
 		baseUrl = baseUrl.trim();

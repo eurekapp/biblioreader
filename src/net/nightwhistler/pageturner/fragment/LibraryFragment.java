@@ -147,7 +147,7 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 
         LOG.debug("onCreate()");
 		
-		Bitmap backupBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.unknown_cover );
+		Bitmap backupBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.unknown_cover1 );
 		this.backupCover = new FastBitmapDrawable(backupBitmap);
 		
 		this.handler = new Handler();
@@ -407,7 +407,7 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
         onMenuPress( menu, R.id.list_view ).thenDo( toggleListener );
 
         onMenuPress( menu, R.id.scan_books ).thenDo( this::showImportDialog );
-        onMenuPress( menu, R.id.about ).thenDo( dialogFactory.buildAboutDialog()::show );
+//        onMenuPress( menu, R.id.about ).thenDo( dialogFactory.buildAboutDialog()::show );
 
         onMenuPress( menu, R.id.profile_day ).thenDo(() -> switchToColourProfile(ColourProfile.DAY) );
         onMenuPress( menu, R.id.profile_night ).thenDo(() -> switchToColourProfile(ColourProfile.NIGHT));
@@ -435,11 +435,11 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
         intent.setType("file/*");
         intent.addCategory(Intent.CATEGORY_OPENABLE);
 
-        if (isIntentAvailable(getActivity(), intent)) {
-            onMenuPress( menu, R.id.open_file ).thenDo( this::launchFileManager );
-        } else {
-            menu.findItem(R.id.open_file).setVisible(false);
-        }
+//        if (isIntentAvailable(getActivity(), intent)) {
+//            onMenuPress( menu, R.id.open_file ).thenDo( this::launchFileManager );
+//        } else {
+//            menu.findItem(R.id.open_file).setVisible(false);
+//        }
 
 	}
 
@@ -683,6 +683,8 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 
                 builder.setMessage( getString(R.string.no_bks_fnd_text2) );
 
+
+                //aca se manda a la descarga de libros
                 builder.setPositiveButton( android.R.string.yes, (dialogInterface, i) ->
                     ( (PageTurnerActivity) getSherlockActivity() ).launchActivity( CatalogActivity.class ));
 
@@ -1166,8 +1168,19 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 
                 if (filter == null && sel == Configuration.LibrarySelection.LAST_ADDED && r.getSize() == 0 && !askedUserToImport) {
                     askedUserToImport = true;
-                    buildImportQuestionDialog();
-                    importQuestion.show();
+
+					//Aca pregunta si quieere escanear su telefono por libros presentes
+
+                    //buildImportQuestionDialog();
+                    //importQuestion.show();
+
+                    Intent intent;
+                    //launchActivity(CatalogActivity.class);
+                    intent = new Intent(getActivity(), CatalogActivity.class);
+                    startActivity(intent);
+
+
+
                 }
             }, () -> Toast.makeText(context, R.string.library_failed, Toast.LENGTH_SHORT).show());
 

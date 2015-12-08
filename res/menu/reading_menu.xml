@@ -23,11 +23,11 @@
           android:icon="@drawable/moon"
           android:showAsAction="ifRoom"
           />                 
-    
-    <item android:id="@+id/open_file"          
-          android:title="@string/open_file"
-          android:icon="@drawable/file"
-          />
+    <!-- -->
+    <!--<item android:id="@+id/open_file"          -->
+          <!--android:title="@string/open_file"-->
+          <!--android:icon="@drawable/file"-->
+          <!--/>-->
     
      <item android:id="@+id/search_text"          
           android:title="@string/search_text"
@@ -48,8 +48,8 @@
           android:title="@string/rolling_blind"
           android:icon="@drawable/play" />
 
-    <item android:id="@+id/about"          
-          android:title="@string/about"
-          android:icon="@drawable/info" />  
+    <!--<item android:id="@+id/about"          -->
+          <!--android:title="@string/about"-->
+          <!--android:icon="@drawable/info" />  -->
                
 </menu>
