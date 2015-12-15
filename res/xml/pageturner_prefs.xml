@@ -2,50 +2,50 @@
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" 
 	android:key="PageTurnerState">
 	
-	<PreferenceCategory
-                android:title="@string/pref_sync_settings"> 
-                 
-	<EditTextPreference
-	            android:key="email"
-	            android:title="@string/pref_email"
-	            android:summary="@string/pref_email_summary"
-	            android:dialogTitle="@string/pref_email"
-	            android:dialogMessage="@string/pref_email_message"
-                android:inputType="textEmailAddress"
-	            />
-	
-	<EditTextPreference
-	            android:key="device_name"
-	            android:title="@string/pref_device_name"
-	            android:summary="@string/pref_device_name_summary"
-	            android:dialogTitle="@string/pref_device_name"
-	            android:dialogMessage="@string/pref_device_name_message"
-                android:inputType="textNoSuggestions"
-	            android:dependency="email"   
-	            />
-	
-	<EditTextPreference
-	            android:key="access_key"
-	            android:title="@string/pref_access_key"
-	            android:summary="@string/pref_access_key_summary"
-	            android:dialogTitle="@string/pref_access_key"
-	            android:dialogMessage="@string/pref_access_key_message"
-                android:inputType="textPassword"
-	            android:dependency="email"   
-	            />
+	<!--<PreferenceCategory-->
+                <!--android:title="@string/pref_sync_settings"> -->
+                 <!-- -->
+	<!--<EditTextPreference-->
+	            <!--android:key="email"-->
+	            <!--android:title="@string/pref_email"-->
+	            <!--android:summary="@string/pref_email_summary"-->
+	            <!--android:dialogTitle="@string/pref_email"-->
+	            <!--android:dialogMessage="@string/pref_email_message"-->
+                <!--android:inputType="textEmailAddress"-->
+	            <!--/>-->
+	<!-- -->
+	<!--<EditTextPreference-->
+	            <!--android:key="device_name"-->
+	            <!--android:title="@string/pref_device_name"-->
+	            <!--android:summary="@string/pref_device_name_summary"-->
+	            <!--android:dialogTitle="@string/pref_device_name"-->
+	            <!--android:dialogMessage="@string/pref_device_name_message"-->
+                <!--android:inputType="textNoSuggestions"-->
+	            <!--android:dependency="email"   -->
+	            <!--/>-->
+	<!-- -->
+	<!--<EditTextPreference-->
+	            <!--android:key="access_key"-->
+	            <!--android:title="@string/pref_access_key"-->
+	            <!--android:summary="@string/pref_access_key_summary"-->
+	            <!--android:dialogTitle="@string/pref_access_key"-->
+	            <!--android:dialogMessage="@string/pref_access_key_message"-->
+                <!--android:inputType="textPassword"-->
+	            <!--android:dependency="email"   -->
+	            <!--/>-->
 
-    <EditTextPreference
-	            android:key="sync_server"
-	            android:title="@string/pref_sync_server"
-	            android:summary="@string/pref_sync_server_summary"
-	            android:dialogTitle="@string/pref_sync_server"
-	            android:dialogMessage="@string/pref_sync_server_message"
-                android:dependency="email"
-                android:inputType="textNoSuggestions"
-                android:defaultValue="http://api.pageturner-reader.org/progress/"
-	            />
-	
-	</PreferenceCategory>
+    <!--<EditTextPreference-->
+	            <!--android:key="sync_server"-->
+	            <!--android:title="@string/pref_sync_server"-->
+	            <!--android:summary="@string/pref_sync_server_summary"-->
+	            <!--android:dialogTitle="@string/pref_sync_server"-->
+	            <!--android:dialogMessage="@string/pref_sync_server_message"-->
+                <!--android:dependency="email"-->
+                <!--android:inputType="textNoSuggestions"-->
+                <!--android:defaultValue="http://api.pageturner-reader.org/progress/"-->
+	            <!--/>-->
+	<!-- -->
+	<!--</PreferenceCategory>-->
 
 	<PreferenceCategory
             android:key="nook_prefs"
@@ -106,23 +106,23 @@
 
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="@string/opds_settings">
-				
-               <PreferenceScreen        			
-        			android:title="@string/pref_manage_sites"
-        			android:summary="@string/pref_manage_sites_summary">
-        			
-        			<intent android:action="net.nightwhistler.pageturner.activity.ManageSitesActivity"/>
-        			         
-    			</PreferenceScreen>
+    <!--<PreferenceCategory android:title="@string/opds_settings">-->
+				<!-- -->
+               <!--<PreferenceScreen        			-->
+        			<!--android:title="@string/pref_manage_sites"-->
+        			<!--android:summary="@string/pref_manage_sites_summary">-->
+        			<!-- -->
+        			<!--<intent android:action="net.nightwhistler.pageturner.activity.ManageSitesActivity"/>-->
+        			         <!-- -->
+    			<!--</PreferenceScreen>-->
 
-            <CheckBoxPreference
-                android:key="accept_self_signed"
-                android:title="@string/pref_accept_self_signed"
-                android:summary="@string/pref_accept_self_signed_summary"
-                android:defaultValue="false" />
-                
-    </PreferenceCategory>
+            <!--<CheckBoxPreference-->
+                <!--android:key="accept_self_signed"-->
+                <!--android:title="@string/pref_accept_self_signed"-->
+                <!--android:summary="@string/pref_accept_self_signed_summary"-->
+                <!--android:defaultValue="false" />-->
+                <!-- -->
+    <!--</PreferenceCategory>-->
 
 	<PreferenceCategory
                 android:key="visual_prefs"

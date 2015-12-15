@@ -20,9 +20,11 @@ package net.nightwhistler.pageturner.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Environment;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
+import android.util.Log;
 import android.widget.Toast;
 import com.google.inject.Inject;
 import com.google.inject.Provider;
@@ -37,12 +39,26 @@ import net.nightwhistler.pageturner.R;
 import net.nightwhistler.pageturner.catalog.*;
 import net.nightwhistler.pageturner.fragment.BookDetailsFragment;
 import net.nightwhistler.pageturner.fragment.CatalogFragment;
+import net.nightwhistler.pageturner.library.LibraryBook;
+
+import org.apache.http.HttpEntity;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.util.EntityUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import roboguice.inject.InjectFragment;
 
 import javax.annotation.Nullable;
 
+import java.io.File;
+import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -75,7 +91,8 @@ public class CatalogActivity extends PageTurnerActivity implements CatalogParent
         hideDetailsView();
 
         //loadCustomSitesFeed();
-        loadFeed( null, config.getBaseOPDSFeed(), null, false );
+        loadFeed(null, config.getBaseOPDSFeed(), null, true);
+        //loadCustomSitesFeed();
         fragmentManager.addOnBackStackChangedListener( this::onBackStackChanged );
     }
 
@@ -112,7 +129,7 @@ public class CatalogActivity extends PageTurnerActivity implements CatalogParent
         supportInvalidateOptionsMenu();
         getSupportActionBar().setTitle(feed.getTitle());
 
-        LOG.debug( "Changed window title to " + feed.getTitle() );
+        LOG.debug("Changed window title to " + feed.getTitle());
 
         /*
          * Work-around, since the initial fragment isn't put on
@@ -132,9 +149,9 @@ public class CatalogActivity extends PageTurnerActivity implements CatalogParent
         if ( fragmentManager.getBackStackEntryCount() > 0 ) {
 
             Option<Fragment> fragmentOption = getCurrentVisibleFragment();
-            fragmentOption.forEach( (fragment) -> {
-                if ( fragment instanceof CatalogFragment ) {
-                    LOG.debug( "Notifying fragment.");
+            fragmentOption.forEach((fragment) -> {
+                if (fragment instanceof CatalogFragment) {
+                    LOG.debug("Notifying fragment.");
                     ((CatalogFragment) fragment).onBecameVisible();
                 }
             });
@@ -184,30 +201,121 @@ public class CatalogActivity extends PageTurnerActivity implements CatalogParent
         customSites.setURL(Catalog.CUSTOM_SITES_ID);
         customSites.setTitle(getString(R.string.custom_site));
 
+//loadFeed(null,"http://190.147.155.131/Bibliopedia/_catalog/allbooks/allbooks_Z_Page_1.xml",null,true);
+//        Entry entry = new Entry();
+//        entry.setTitle("Zadig, ó El Destino, Historia Oriental");
+//        entry.setSummary("");
+//
+//        Link link = new Link("http://190.147.155.131/Bibliopedia/_catalog/book_1/book_1065.xml", AtomConstants.TYPE_ATOM, AtomConstants.REL_BUY, null);
+//        entry.addLink(link);
+//        entry.setBaseURL("http://190.147.155.131/Bibliopedia/_catalog/book_1/book_1065.xml");
+//        customSites.addEntry(entry);
+//
+//
+//        Entry entry1 = new Entry();
+//        entry1.setTitle("Zalacaín el aventurero (historia de las buenas andanzas y fortunas de Martín Zalacaín el aventurero).");
+//        entry1.setSummary("");
+//
+//        Link link1 = new Link("http://190.147.155.131/Bibliopedia/_catalog/book_0/book_493.xml", AtomConstants.TYPE_ATOM, AtomConstants.REL_BUY, null);
+//        entry1.addLink(link1);
+//        entry1.setBaseURL("http://190.147.155.131/Bibliopedia/_catalog/book_0/book_493.xml");
+//        customSites.addEntry(entry1);
+//
+//
+//        Entry entry2 = new Entry();
+//        entry2.setTitle("Zaragoza : Episodios Nacionales");
+//        entry2.setSummary("");
+//
+//        Link link2 = new Link("http://190.147.155.131/Bibliopedia/_catalog/book_0/book_637.xml", AtomConstants.TYPE_ATOM, AtomConstants.REL_BUY, null);
+//        entry2.addLink(link2);
+//        entry2.setBaseURL("http://190.147.155.131/Bibliopedia/_catalog/book_0/book_637.xml");
+//        customSites.addEntry(entry2);
+
         for ( CustomOPDSSite site: sites ) {
-            Entry entry = new Entry();
-            entry.setTitle(site.getName());
-            entry.setSummary(site.getDescription());
+            Entry entryx = new Entry();
+            entryx.setTitle(site.getName());
+            entryx.setSummary(site.getDescription());
 
-            Link link = new Link(site.getUrl(), AtomConstants.TYPE_ATOM, AtomConstants.REL_BUY, null);
-            entry.addLink(link);
-            entry.setBaseURL(site.getUrl());
+            Link linkx = new Link(site.getUrl(), AtomConstants.TYPE_ATOM, AtomConstants.REL_BUY, null);
+            entryx.addLink(linkx);
+            entryx.setBaseURL(site.getUrl());
 
-            customSites.addEntry(entry);
+            customSites.addEntry(entryx);
         }
+
+        ///METER ALGUNOS LIBROS A MANO
+//        String url = "http://190.147.155.131/Bibliopedia/_catalog/allbooks/allbooks_Z_Page_1.xml";
+//        String xml = null;
+//        try
+//        {
+//            //default http client
+//            HttpClient httpClient = new DefaultHttpClient();
+//
+//            HttpPost httpPost = new HttpPost(url);
+//
+//            System.out.println("URL IN PARSER:==="+url+"====");
+//
+//            HttpResponse httpResponse = httpClient.execute(httpPost);
+//
+
+//            HttpEntity httpentity = httpResponse.getEntity();
+//
+//            xml = EntityUtils.toString(httpentity);   // I have changed it... because  occur while downloading..
+//
+//            Log.d("response", xml);
+//        }
+//        catch(UnsupportedEncodingException e)
+//        {
+//            e.printStackTrace();
+//        }
+//        catch (ClientProtocolException e)
+//        {
+//            e.printStackTrace();
+//        }
+//        catch (IOException e)
+//        {
+//            e.printStackTrace();
+//        }
+//
+//        System.out.print(xml);
+
+
+// a mano
+//        List<LibraryBook> sites1 = config.getCustomOPDSSites();
+//
+//        for ( LibraryBook site: sites1 ) {
+//            Entry entry = new Entry();
+//            entry.setTitle(site.getName());
+//            entry.setSummary(site.getDescription());
+//
+//            Link link = new Link(site.getUrl(), AtomConstants.TYPE_ATOM, AtomConstants.REL_BUY, null);
+//            entry.addLink(link);
+//            entry.setBaseURL(site.getUrl());
+//
+//            customSites.addEntry(entry);
+//        }
+
+        //CatalogFragment x = (CatalogFragment) getCurrentVisibleFragment();
+        //x.loadURL(null, "http://190.147.155.131/Bibliopedia/_catalog/allbooks/allbooks_Z_Page_1.xml", true, false, LoadFeedCallback.ResultType.APPEND);
+
+
 
         customSites.setId(Catalog.CUSTOM_SITES_ID);
 
-        newCatalogFragment.setStaticFeed( customSites );
+        newCatalogFragment.setStaticFeed(customSites);
 
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.setCustomAnimations(android.R.anim.slide_in_left, android.R.anim.slide_out_right);
 
-        fragmentTransaction.replace(R.id.fragment_catalog, newCatalogFragment, Catalog.CUSTOM_SITES_ID );
-        fragmentTransaction.addToBackStack( Catalog.CUSTOM_SITES_ID );
+        fragmentTransaction.replace(R.id.fragment_catalog, newCatalogFragment, Catalog.CUSTOM_SITES_ID);
+        fragmentTransaction.addToBackStack(Catalog.CUSTOM_SITES_ID);
+
+
 
         fragmentTransaction.commit();
     }
+
+
 
     @Override
     public void loadFeed(Entry entry, String href, String baseURL, boolean asDetailsFeed) {
@@ -221,7 +329,8 @@ public class CatalogActivity extends PageTurnerActivity implements CatalogParent
         fragmentTransaction.replace(R.id.fragment_catalog, newCatalogFragment, baseURL);
 
         if ( ! href.equals( config.getBaseOPDSFeed() ) ) {
-            fragmentTransaction.addToBackStack( baseURL );
+            fragmentTransaction.addToBackStack(baseURL);
+
         }
 
         fragmentTransaction.commit();

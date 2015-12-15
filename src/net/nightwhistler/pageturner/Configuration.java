@@ -54,7 +54,8 @@ import static jedi.functional.FunctionalPrimitives.select;
 import static jedi.option.Options.none;
 import static jedi.option.Options.option;
 import static jedi.option.Options.some;
-import static net.nightwhistler.pageturner.CustomOPDSSite.fromJSON;
+import  net.nightwhistler.pageturner.CustomOPDSSite;
+import  net.nightwhistler.pageturner.CustomBook;
 import static net.nightwhistler.pageturner.PlatformUtil.isAtLeast;
 
 /**
@@ -409,7 +410,7 @@ public class Configuration {
         SharedPreferences prefs = getPrefsForBook(fileName);
 
         if ( prefs.contains(KEY_HIGHLIGHTS) ) {
-            return HighLight.fromJSON(fileName,  prefs.getString(KEY_HIGHLIGHTS, "[]"));
+            return HighLight.fromJSON(fileName, prefs.getString(KEY_HIGHLIGHTS, "[]"));
         }
 
         return new ArrayList<>();
@@ -422,7 +423,7 @@ public class Configuration {
 
     public LongShortPressBehaviour getLongShortPressBehaviour() {
         String value = settings.getString(KEY_LONG_SHORT,
-                LongShortPressBehaviour.NORMAL.name());
+				LongShortPressBehaviour.NORMAL.name());
         return LongShortPressBehaviour.valueOf( value.toUpperCase(Locale.US) );
     }
 
@@ -472,7 +473,7 @@ public class Configuration {
 			JSONArray array = new JSONArray(sites);
 			for (int i = 0; i < array.length(); i++) {
 				JSONObject obj = array.getJSONObject(i);
-				CustomOPDSSite site = fromJSON(obj);
+				CustomOPDSSite site = CustomOPDSSite.fromJSON(obj);
                 result.add(site);
 			}
 		} catch (JSONException js) {
@@ -482,6 +483,46 @@ public class Configuration {
 		importOldCalibreSite(result);
 		return result;
 	}
+	public List<CustomOPDSSite> getCustomOPDSSitesx() {
+
+		String sites = settings.getString(KEY_OPDS_SITES, "[]");
+
+		List<CustomOPDSSite> result = new ArrayList<>();
+
+		try {
+			JSONArray array = new JSONArray(sites);
+			for (int i = 0; i < array.length(); i++) {
+				JSONObject obj = array.getJSONObject(i);
+				CustomOPDSSite site = CustomOPDSSite.fromJSON(obj);
+				result.add(site);
+			}
+		} catch (JSONException js) {
+			LOG.error( "Could not retrieve custom opds sites", js );
+		}
+
+		importOldCalibreSite(result);
+		return result;
+	}
+//	public List<CustomBook> getCustomBooks() {
+//
+//		String sites = settings.getString(KEY_OPDS_SITES, "[]");
+//
+//		List<CustomBook> result = new ArrayList<>();
+//
+//		try {
+//			JSONArray array = new JSONArray(sites);
+//			for (int i = 0; i < array.length(); i++) {
+//				JSONObject obj = array.getJSONObject(i);
+//				CustomBook site = CustomBook.fromJSON(obj);
+//				result.add(site);
+//			}
+//		} catch (JSONException js) {
+//			LOG.error( "Could not retrieve custom opds sites", js );
+//		}
+//
+//		//importOldCalibreSite(result);
+//		return result;
+//	}
 
 	private void importOldCalibreSite(List<CustomOPDSSite> sites) {
 
