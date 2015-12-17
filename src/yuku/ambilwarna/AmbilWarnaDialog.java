@@ -8,7 +8,7 @@ import android.graphics.Color;
 import android.view.*;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import net.nightwhistler.pageturner.R;
+import net.eurekapp.pageturner.R;
 
 public class AmbilWarnaDialog {
 	public interface OnAmbilWarnaListener {

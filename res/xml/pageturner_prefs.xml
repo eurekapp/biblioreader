@@ -112,7 +112,7 @@
         			<!--android:title="@string/pref_manage_sites"-->
         			<!--android:summary="@string/pref_manage_sites_summary">-->
         			<!-- -->
-        			<!--<intent android:action="net.nightwhistler.pageturner.activity.ManageSitesActivity"/>-->
+        			<!--<intent android:action="ManageSitesActivity"/>-->
         			         <!-- -->
     			<!--</PreferenceScreen>-->
 
@@ -128,7 +128,7 @@
                 android:key="visual_prefs"
                 android:title="@string/pref_visual_settings">  
                 
-	<net.nightwhistler.pageturner.prefs.LanguageSwitchPreference 
+	<net.eurekapp.pageturner.prefs.LanguageSwitchPreference
 	    	android:key="custom_lang"
 	    	android:title="@string/pref_lang"
 	    	android:summary="@string/pref_lang_summary"
@@ -292,38 +292,38 @@
 	<PreferenceCategory
                 android:title="@string/pref_colour_settings">
         
-        	<net.nightwhistler.pageturner.prefs.ColourChooserPref
+        	<net.eurekapp.pageturner.prefs.ColourChooserPref
     			android:key="day_text"
     			android:title="@string/pref_day_text"
     			android:summary="@string/pref_day_text_summary"
     			android:defaultValue="-16777216" />
     			
-    		<net.nightwhistler.pageturner.prefs.ColourChooserPref
+    		<net.eurekapp.pageturner.prefs.ColourChooserPref
     			android:key="day_bg"
     			android:title="@string/pref_day_bg"
     			android:summary="@string/pref_day_bg_summary"
     			android:defaultValue="-1" />     		
     		    		
-			<net.nightwhistler.pageturner.prefs.ColourChooserPref
+			<net.eurekapp.pageturner.prefs.ColourChooserPref
     			android:key="day_link"
     			android:title="@string/pref_day_link"
     			android:summary="@string/pref_day_link_summary"
     			android:defaultValue="-16776961" />  
 			 		    		
     		
-             <net.nightwhistler.pageturner.prefs.ColourChooserPref
+             <net.eurekapp.pageturner.prefs.ColourChooserPref
     			android:key="night_text"
     			android:title="@string/pref_night_text"
     			android:summary="@string/pref_night_text_summary"
     			android:defaultValue="-7829368" />
     				
-    		<net.nightwhistler.pageturner.prefs.ColourChooserPref
+    		<net.eurekapp.pageturner.prefs.ColourChooserPref
     			android:key="night_bg"
     			android:title="@string/pref_night_bg"
     			android:summary="@string/pref_night_bg_summary"
     			android:defaultValue="-16777216" />  
     			
-    		<net.nightwhistler.pageturner.prefs.ColourChooserPref
+    		<net.eurekapp.pageturner.prefs.ColourChooserPref
     			android:key="night_link"
     			android:title="@string/pref_night_link"
     			android:summary="@string/pref_night_link_summary"
