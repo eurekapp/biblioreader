@@ -14,13 +14,13 @@
     
    
                 
-        <net.eurekapp.pageturner.view.bookview.BookView
+        <org.eurekapp.pageturner.view.bookview.BookView
             android:id="@+id/bookView"
         	android:layout_width="fill_parent"
 	        android:layout_height="fill_parent">	        
           
                 
-                <view class="net.eurekapp.pageturner.view.bookview.BookView$InnerView"
+                <view class="org.eurekapp.pageturner.view.bookview.BookView$InnerView"
                     android:id="@+id/innerView"
                     android:layout_width="fill_parent"
                     android:layout_height="fill_parent"
@@ -29,8 +29,8 @@
                     
                         
            
-        </net.eurekapp.pageturner.view.bookview.BookView>
-	    <net.eurekapp.pageturner.view.AnimatedImageView
+        </org.eurekapp.pageturner.view.bookview.BookView>
+	    <org.eurekapp.pageturner.view.AnimatedImageView
     	     android:layout_width="fill_parent"
         	android:layout_height="fill_parent" 
         	android:id="@+id/dummyView" />
