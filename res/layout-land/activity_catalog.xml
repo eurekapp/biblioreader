@@ -24,7 +24,7 @@ android:layout_height="match_parent">
                 />
 
         <fragment
-                class="org.eurekapp.pageturner.fragment.BookDetailsFragment"
+                class="org.eurekapp.bibliopedia.fragment.BookDetailsFragment"
                 android:id="@+id/fragment_book_details"
                 android:layout_height="match_parent"
                 android:layout_width="0dp"

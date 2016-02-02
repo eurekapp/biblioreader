@@ -7,7 +7,7 @@ import java.util.List;
 
 import static java.util.Collections.unmodifiableList;
 import static jedi.functional.FunctionalPrimitives.forEach;
-import static org.eurekapp.pageturner.CollectionUtil.listElement;
+import static org.eurekapp.bibliopedia.CollectionUtil.listElement;
 
 /**
  * Created by alex on 11/9/14.

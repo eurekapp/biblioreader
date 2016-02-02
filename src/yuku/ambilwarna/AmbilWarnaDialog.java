@@ -8,7 +8,7 @@ import android.graphics.Color;
 import android.view.*;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
-import org.eurekapp.pageturner.R;
+import org.eurekapp.bibliopedia.R;
 
 public class AmbilWarnaDialog {
 	public interface OnAmbilWarnaListener {

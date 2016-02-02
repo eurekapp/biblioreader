@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="org.eurekapp.pageturner"
+      package="org.eurekapp.bibliopedia"
       android:versionName="2.4.0_SNAPSHOT"
       android:versionCode="62"
       android:installLocation="auto">
@@ -13,21 +13,21 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name="org.eurekapp.pageturner.PageTurner"
+        android:name="org.eurekapp.bibliopedia.PageTurner"
         android:description="@string/app_desc"
         android:icon="@drawable/page_turner"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         >
         
-        <receiver android:name="org.eurekapp.pageturner.activity.MediaButtonReceiver" >
+        <receiver android:name="org.eurekapp.bibliopedia.activity.MediaButtonReceiver" >
         	<intent-filter android:priority="10000" >
             	<action android:name="android.intent.action.MEDIA_BUTTON" />
         	</intent-filter>
     	</receiver>
         
         <activity
-            android:name="org.eurekapp.pageturner.activity.ReadingActivity"
+            android:name="org.eurekapp.bibliopedia.activity.ReadingActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
@@ -45,17 +45,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="org.eurekapp.pageturner.activity.PageTurnerPrefsActivity"
+            android:name="org.eurekapp.bibliopedia.activity.PageTurnerPrefsActivity"
             android:label="@string/prefs" />
         <activity
-            android:name="org.eurekapp.pageturner.activity.LibraryActivity"
+            android:name="org.eurekapp.bibliopedia.activity.LibraryActivity"
             android:label="@string/library" />
         <activity
-            android:name="org.eurekapp.pageturner.activity.FileBrowseActivity"
+            android:name="org.eurekapp.bibliopedia.activity.FileBrowseActivity"
             android:label="@string/browse" />
 
         <activity
-                android:name="org.eurekapp.pageturner.activity.CatalogBookDetailsActivity"
+                android:name="org.eurekapp.bibliopedia.activity.CatalogBookDetailsActivity"
                 android:label="@string/book_details" >
 
             <intent-filter>
@@ -70,15 +70,15 @@
         </activity>
         
         <activity
-            android:name="org.eurekapp.pageturner.activity.CatalogActivity"
+            android:name="org.eurekapp.bibliopedia.activity.CatalogActivity"
             android:label="@string/download" />
         
         <activity
-            android:name="org.eurekapp.pageturner.activity.ManageSitesActivity"
+            android:name="org.eurekapp.bibliopedia.activity.ManageSitesActivity"
             android:label="@string/pref_manage_sites" >
                    
         	<intent-filter>
-           		<action android:name="org.eurekapp.pageturner.activity.ManageSitesActivity" />
+           		<action android:name="org.eurekapp.bibliopedia.activity.ManageSitesActivity" />
            		<category android:name="android.intent.category.DEFAULT" />
        		</intent-filter>
         </activity>        

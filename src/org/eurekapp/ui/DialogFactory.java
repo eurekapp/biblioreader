@@ -82,8 +82,8 @@ public class DialogFactory {
 	public AlertDialog buildAboutDialog() {
 		
 		AlertDialog.Builder builder = new AlertDialog.Builder(context);
-		builder.setTitle(org.eurekapp.pageturner.R.string.about);
-		builder.setIcon(org.eurekapp.pageturner.R.drawable.page_turner);
+		builder.setTitle(org.eurekapp.bibliopedia.R.string.about);
+		builder.setIcon(org.eurekapp.bibliopedia.R.drawable.page_turner);
 
 		String version = "";
 		try {
@@ -93,8 +93,8 @@ public class DialogFactory {
 			// Huh? Really?
 		}
 
-		String html = "<h2>" + context.getString(org.eurekapp.pageturner.R.string.app_name) + " " +  version + "</h2>";
-		html += context.getString(org.eurekapp.pageturner.R.string.about_gpl);
+		String html = "<h2>" + context.getString(org.eurekapp.bibliopedia.R.string.app_name) + " " +  version + "</h2>";
+		html += context.getString(org.eurekapp.bibliopedia.R.string.about_gpl);
 		html += "<br/><a href='http://pageturner-reader.org'>http://pageturner-reader.org</a>";
 
 		builder.setMessage( Html.fromHtml(html));
