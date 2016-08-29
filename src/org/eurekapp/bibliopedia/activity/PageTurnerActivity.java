@@ -1,5 +1,6 @@
 package org.eurekapp.bibliopedia.activity;
 
+import android.app.AlertDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.GravityCompat;
@@ -55,6 +56,8 @@ public abstract class PageTurnerActivity extends RoboSherlockFragmentActivity {
 
     @Override
     protected final void onCreate(Bundle savedInstanceState) {
+
+
 
         Configuration config = RoboGuice.getInjector(this).getInstance(Configuration.class);
         PageTurner.changeLanguageSetting(this, config);
@@ -157,9 +160,12 @@ public abstract class PageTurnerActivity extends RoboSherlockFragmentActivity {
 
     protected void onCreatePageTurnerActivity( Bundle savedInstanceState ) {
 
+
     }
 
     protected void beforeLaunchActivity() {
+
+
 
     }
 

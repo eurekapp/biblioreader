@@ -179,7 +179,7 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 		this.listView.setOnScrollListener( new CoverScrollListener() );
 		
 		if ( config.getLibraryView() == Configuration.LibraryView.BOOKCASE ) {
-			
+
 			this.bookAdapter = new BookCaseAdapter();
 			this.bookCaseView.setAdapter(bookAdapter);			
 			
@@ -1057,7 +1057,7 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 			super(context, layout, view, input);
 			this.data = input;
 		}
-		
+
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
 			View view = super.getView(position, convertView, parent);

@@ -2436,14 +2436,14 @@ public class ReadingFragment extends RoboSherlockFragment implements
                 this.restartActivity();
                 return true;
 
-            case R.id.manual_sync:
-                if (config.isSyncEnabled()) {
-                    new ManualProgressSync().execute();
-                } else {
-                    Toast.makeText(context, R.string.enter_email, Toast.LENGTH_LONG)
-                            .show();
-                }
-                return true;
+//            case R.id.manual_sync:
+//                if (config.isSyncEnabled()) {
+//                    new ManualProgressSync().execute();
+//                } else {
+//                    Toast.makeText(context, R.string.enter_email, Toast.LENGTH_LONG)
+//                            .show();
+//                }
+//                return true;
 
             case R.id.search_text:
                 onSearchRequested();

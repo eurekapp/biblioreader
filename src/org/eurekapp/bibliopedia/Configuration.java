@@ -199,6 +199,8 @@ public class Configuration {
 
     public static final String KEY_SCAN_FOLDER = "scan_folder";
     public static final String KEY_USE_SCAN_FOLDER = "use_scan_folder";
+
+	public static final String LOGG = "logged";
     
 	// Flag for whether PageTurner is running on a Nook Simple Touch - an e-ink
 	// based Android device
@@ -219,6 +221,19 @@ public class Configuration {
 
     private String defaultSerifFont;
     private String defaultSansFont;
+
+	public boolean isLogged() {
+		return settings.getBoolean(LOGG,false);
+	}
+
+	public void setLogged(boolean lo) {
+
+
+			updateValue(settings, LOGG, lo);
+
+	}
+
+	private boolean logged;
 
 	@Inject
 	public Configuration(Context context) {

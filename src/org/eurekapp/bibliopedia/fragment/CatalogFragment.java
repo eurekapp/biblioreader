@@ -18,6 +18,8 @@
  */
 package org.eurekapp.bibliopedia.fragment;
 
+import android.app.Activity;
+import android.app.AlertDialog;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
@@ -25,12 +27,19 @@ import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.os.StrictMode;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AbsListView;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ListView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.TextView;
 import android.widget.Toast;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.actionbarsherlock.view.Menu;
@@ -42,6 +51,15 @@ import com.google.inject.Inject;
 import com.google.inject.Provider;
 import jedi.option.Option;
 
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.StatusLine;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.eurekapp.bibliopedia.Configuration;
+import org.eurekapp.bibliopedia.PlatformUtil;
+import org.eurekapp.bibliopedia.activity.FileBrowseActivity;
 import org.eurekapp.nucular.atom.AtomConstants;
 import org.eurekapp.nucular.atom.Link;
 import org.eurekapp.bibliopedia.catalog.Catalog;
@@ -63,6 +81,10 @@ import org.slf4j.LoggerFactory;
 import roboguice.inject.InjectView;
 
 import javax.annotation.Nullable;
+
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLEncoder;
@@ -102,6 +124,9 @@ public class CatalogFragment extends RoboSherlockFragment implements LoadFeedCal
     @Inject
     private TaskQueue taskQueue;
 
+    @Inject
+    private Configuration conf;
+
     private Map<String, Drawable> thumbnailCache = new ConcurrentHashMap<>();
 
     private MenuItem searchMenuItem;
@@ -110,15 +135,25 @@ public class CatalogFragment extends RoboSherlockFragment implements LoadFeedCal
 
     private Feed staticFeed;
 
+    private boolean logged;
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
+
+
+
         DisplayMetrics metrics = metricsProvider.get();
         getActivity().getWindowManager().getDefaultDisplay().getMetrics(metrics);
 
-        this.taskQueue.setTaskQueueListener( this::onLoadingDone );
+        this.taskQueue.setTaskQueueListener(this::onLoadingDone);
 	}
+
+
+
+
+
 
     public void setBaseURL(  String baseURL ) {
         this.baseURL = baseURL;
@@ -126,13 +161,22 @@ public class CatalogFragment extends RoboSherlockFragment implements LoadFeedCal
 
     @Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-		return inflater.inflate(R.layout.fragment_catalog, container, false);
+
+        return inflater.inflate(R.layout.fragment_catalog, container, false);
 	}
 
     @Override
 	public void onViewCreated(View view, Bundle savedInstanceState) {
 		super.onViewCreated(view, savedInstanceState);
 
+        int SDK_INT = android.os.Build.VERSION.SDK_INT;
+        if (SDK_INT > 8) {
+            StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder()
+                    .permitAll().build();
+            StrictMode.setThreadPolicy(policy);
+            login();
+
+        }
 		setHasOptionsMenu(true);
 		catalogList.setAdapter(adapter);
         adapter.setImageLoader( (baseURL, link) ->
@@ -140,9 +184,9 @@ public class CatalogFragment extends RoboSherlockFragment implements LoadFeedCal
 
         catalogList.setOnScrollListener(new LoadingScrollListener());
 
-        catalogList.setOnItemClickListener( (list, v, position, a) -> {
+        catalogList.setOnItemClickListener((list, v, position, a) -> {
             Option<Entry> entry = adapter.getItem(position);
-            entry.forEach( e -> onEntryClicked(e, position));
+            entry.forEach(e -> onEntryClicked(e, position));
         });
 
         if ( staticFeed != null ) {
@@ -244,7 +288,7 @@ public class CatalogFragment extends RoboSherlockFragment implements LoadFeedCal
             baseURL = this.baseURL;
         }
 
-        LOG.debug( "Loading new Feed with baseURL: " + baseURL );
+        LOG.debug("Loading new Feed with baseURL: " + baseURL);
 
         ((CatalogParent) getActivity()).loadFeed(entry, href, baseURL, asDetailsFeed);
     }
@@ -544,5 +588,97 @@ public class CatalogFragment extends RoboSherlockFragment implements LoadFeedCal
 
         }
     }
+
+
+    private void login() {
+
+
+       if (conf.isLogged()) return;
+
+        LayoutInflater inflater = PlatformUtil.getLayoutInflater(getActivity());
+        final View layout = inflater.inflate(org.eurekapp.bibliopedia.R.layout.login, null);
+
+        final TextView folder = (TextView) layout.findViewById(org.eurekapp.bibliopedia.R.id.accountmail);
+
+        folder.setEnabled(true);
+
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
+        builder.setTitle("Ingresar");
+        builder.setMessage("Tiene un correo valido para ingresar al sistema?");
+
+
+
+        builder.setView(layout);
+        builder.setPositiveButton(android.R.string.yes, (dialog, which) -> {
+
+                    String email = String.valueOf(folder.getText());
+                    email = email.trim();
+                    Log.d("PIPEEEEEE", email);
+                    try {
+
+                        URL url = new URL("http://190.147.155.131:8007/woop3/webresources/entities.user/login/" + email);
+                        Log.d("PIPEEEEEE", url.toString());
+
+                        HttpClient httpclient = new DefaultHttpClient();
+                        HttpResponse response = httpclient.execute(new HttpGet(String.valueOf(url)));
+                        StatusLine statusLine = response.getStatusLine();
+
+                        if (statusLine.getStatusCode() == HttpStatus.SC_OK) {
+                            ByteArrayOutputStream out = new ByteArrayOutputStream();
+
+                            response.getEntity().writeTo(out);
+                            String responseString = out.toString();
+                            Log.d("PIPEE", responseString);
+
+                            out.close();
+                            if (responseString.equalsIgnoreCase("true")) {
+                                conf.setLogged(true);
+
+                            } else {
+                                AlertDialog.Builder bui = new AlertDialog.Builder(getActivity());
+                                builder.setTitle("Incorrecto");
+                                builder.setMessage("Lo sentimos, su correo no es válido");
+                                builder.show();
+
+                            }
+
+
+                            //..more logic
+                        } else {
+                            //Closes the connection.
+                            try {
+                                response.getEntity().getContent().close();
+                                Log.d("login", statusLine.getReasonPhrase());
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+
+                        }
+                    } catch (IOException e) {
+                        Log.d("login", e.toString());
+                    }
+
+                    //getLogin();
+
+                    dialog.dismiss();
+
+                }
+
+        );
+
+    builder.setNegativeButton(android.R.string.no, (dialog, which) ->
+
+    {
+        dialog.dismiss();
+        //android.os.Process.killProcess(android.os.Process.myPid());
+        getActivity().finish();
+
+        });
+
+        builder.setCancelable(false);
+        builder.show();
+    }
+
 
 }

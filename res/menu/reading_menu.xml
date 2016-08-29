@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android" >
 
-     
-     <item android:id="@+id/manual_sync"          
-          android:title="@string/manual_sync"
-          android:icon="@drawable/cloud_refresh"
-          android:showAsAction="ifRoom" />
+     <!--la nubecita -->
+     <!--<item android:id="@+id/manual_sync"          -->
+          <!--android:title="@string/manual_sync"-->
+          <!--android:icon="@drawable/cloud_refresh"-->
+          <!--android:showAsAction="ifRoom" />-->
 
     <item android:id="@+id/add_bookmark"
           android:title="@string/add_bookmark"

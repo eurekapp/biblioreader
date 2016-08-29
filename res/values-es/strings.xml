@@ -109,7 +109,7 @@
 
      <string name="feed_failed">No se ha podido contactar con el sitio. Por favor intentelo de nuevo.</string>
 
-
++
     <string name="book_failed">No se ha podido descargar el libro. Por favor intentelo de nuevo</string>
 	<string name="browse">Navegar…</string>
 
@@ -400,8 +400,7 @@
     <string name="pref_sync_server_message">Por favor introduzca la url del servidor.</string>
     <string name="no_author_byline" translatable="false">Sin Autor</string>
     <string name="now_reading">Leyendo: %s</string>
-
-
+    <string name="logo">logo</string>
 
 
 </resources>

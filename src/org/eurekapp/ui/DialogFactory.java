@@ -29,6 +29,8 @@ import android.widget.EditText;
 
 import com.google.inject.Inject;
 
+import org.eurekapp.bibliopedia.R;
+
 public class DialogFactory {
 
     @Inject
@@ -83,7 +85,7 @@ public class DialogFactory {
 		
 		AlertDialog.Builder builder = new AlertDialog.Builder(context);
 		builder.setTitle(org.eurekapp.bibliopedia.R.string.about);
-		builder.setIcon(org.eurekapp.bibliopedia.R.drawable.page_turner);
+		builder.setIcon(R.mipmap.bipoplusw);
 
 		String version = "";
 		try {
@@ -95,7 +97,7 @@ public class DialogFactory {
 
 		String html = "<h2>" + context.getString(org.eurekapp.bibliopedia.R.string.app_name) + " " +  version + "</h2>";
 		html += context.getString(org.eurekapp.bibliopedia.R.string.about_gpl);
-		html += "<br/><a href='http://pageturner-reader.org'>http://pageturner-reader.org</a>";
+
 
 		builder.setMessage( Html.fromHtml(html));
 
