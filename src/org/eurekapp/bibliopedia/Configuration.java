@@ -33,7 +33,7 @@ import com.google.inject.Inject;
 
 import jedi.option.Option;
 
-import org.eurekapp.bibliopedia.activity.PageTurnerActivity;
+import org.eurekapp.bibliopedia.activity.BibliopediaActivity;
 import org.eurekapp.bibliopedia.activity.ReadingActivity;
 import org.eurekapp.bibliopedia.dto.HighLight;
 import org.eurekapp.bibliopedia.dto.PageOffsets;
@@ -110,7 +110,7 @@ public class Configuration {
 
 //    public static final String BASE_OPDS_FEED = "http://www.pageturner-reader.org/opds/feeds.xml";
 	//public static final String BASE_OPDS_FEED = "http://190.147.155.131/Bibliopedia/_catalog8/index.xml";
-	public static final String BASE_OPDS_FEED = "http://190.147.155.131/Bibliopedia/_catalog4/allbooks/allbooks_Page_2.xml";
+	public static String BASE_OPDS_FEED = "http://190.147.155.131/Bibliopedia/YopalEscolar/catalog.xml";
 
 	public static final String BASE_SYNC_URL = "http://api.pageturner-reader.org/progress/";
 	public static final String KEY_SYNC_SERVER = "sync_server";
@@ -201,8 +201,12 @@ public class Configuration {
     public static final String KEY_USE_SCAN_FOLDER = "use_scan_folder";
 
 	public static final String LOGG = "logged";
-    
-	// Flag for whether PageTurner is running on a Nook Simple Touch - an e-ink
+	public static final String INST = "institution";
+	public static final String EMAIL = "email";
+
+
+
+	// Flag for whether Bibliopedia is running on a Nook Simple Touch - an e-ink
 	// based Android device
 	
 	// NB: Believe product/model field is "NOOK" on a Nook Touch and 'NookColor'
@@ -225,15 +229,37 @@ public class Configuration {
 	public boolean isLogged() {
 		return settings.getBoolean(LOGG,false);
 	}
-
 	public void setLogged(boolean lo) {
 
 
-			updateValue(settings, LOGG, lo);
+		updateValue(settings, LOGG, lo);
+
+	}
+	public void setInstitution(String lo) {
+
+
+			updateValue(settings, INST, lo);
 
 	}
 
-	private boolean logged;
+
+	public String getInst() {
+		return settings.getString(INST,"Bibliopedia");
+	}
+	public void setEmail(String lo) {
+
+
+		updateValue(settings, EMAIL, lo);
+
+	}
+
+
+	public String getemail() {
+		return settings.getString(EMAIL,"ninguno");
+	}
+
+
+
 
 	@Inject
 	public Configuration(Context context) {
@@ -297,21 +323,24 @@ public class Configuration {
 		return new Locale(languageSetting);
 	}
 
-    public Class<? extends PageTurnerActivity> getLastActivity() {
+    public Class<? extends BibliopediaActivity> getLastActivity() {
         String lastActivityString = settings.getString( KEY_LAST_ACTIVITY,
                 "ReadingActivity" );
 
         try {
-            return (Class<? extends PageTurnerActivity>) Class.forName( lastActivityString );
+            return (Class<? extends BibliopediaActivity>) Class.forName( lastActivityString );
         } catch ( ClassNotFoundException n ) {
             return ReadingActivity.class;
         }
 
     }
 
-    public void setLastActivity( Class<? extends PageTurnerActivity> activityClass ) {
+    public void setLastActivity( Class<? extends BibliopediaActivity> activityClass ) {
         updateValue( KEY_LAST_ACTIVITY, activityClass.getCanonicalName() );
     }
+	public void setBaseOPDSFeed(String s) {
+		 BASE_OPDS_FEED = s;
+	}
 
 	public String getBaseOPDSFeed() {
 		return BASE_OPDS_FEED;
@@ -919,7 +948,7 @@ public class Configuration {
 	public Option<File> getLibraryFolder() {
 
         Option<File> libraryFolder = getStorageBase().map(
-                baseFolder -> new File(baseFolder.getAbsolutePath() + "/PageTurner/Books") );
+                baseFolder -> new File(baseFolder.getAbsolutePath() + "/BibliopediaEY/Books") );
 
         //If the library-folder on external storage exists, return it
         if ( ! isEmpty(select(libraryFolder, File::exists))) {

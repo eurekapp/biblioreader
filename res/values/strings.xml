@@ -2,7 +2,7 @@
 <resources>
 
     
-    <string name="app_name" translatable="false">Bibliopedia+</string>
+    <string name="app_name" translatable="false">Bibliopedia Escolar</string>
     
     <string name="title">Title</string>
     <string name="app_desc">Bibliopedia is an e-book reader .</string>
@@ -376,6 +376,33 @@
     <string name="default_book_title" translatable="false">Title of the book</string>
     <string name="hello_world" translatable="false">Hello world!</string>
     <string name="logo">logo</string>
+
+    <string-array name="institutions">
+        <item>CE LA ESMERALDA</item>
+        <item>I.E. SANTA TERESA</item>
+        <item>INSTITUCIÓN EDUCATIVA TÉCNICA AGROPECUARIA EL TALADRO</item>
+        <item>IE GABRIELA MISTRAL</item>
+        <item>I.E. TERESA DE CALCUTA</item>
+        <item>IE EL TRIUNFO</item>
+        <item>IE LA INMACULADA</item>
+        <item>IE DIVINO SALVADOR</item>
+        <item>IE LUIS CARLOS GALAN SARMIENTO</item>
+        <item>IE ANTONIO NARIÑO</item>
+        <item>IE POLICARPA SALAVARRIETA</item>
+        <item>IE LA CAMPIÑA</item>
+        <item>IE JORGE ELIECER GAITAN</item>
+        <item>IE EL PARAISO</item>
+        <item>IE MANUELA BELTRAN</item>
+        <item>IE LUCILA PIRAGAUTA</item>
+        <item>IE CARLOS LLERAS RESTREPO</item>
+        <item>MEGACOLEGIO EL PROGRESO DE LA COMUNA V</item>
+        <item>IE SAN MATEO</item>
+        <item>IE CENTRO SOCIAL</item>
+        <item>I.E. LLANO LINDO</item>
+        <item>IE BRAULIO GONZALEZ</item>
+        <item>IE LUIS HERNANDEZ VARGAS</item>
+        <item>INST TEC EMPRESARIAL</item>
+    </string-array>
 
 
 </resources>

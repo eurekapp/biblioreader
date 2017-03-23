@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    
-    <string name="app_name" translatable="false">PageTurner</string>
-    
+
     <string name="title">Naslov</string>
     <string name="app_desc">PageTurner je bralnik e-knjig, ki vam omogoča usklajevanje napredka branja na več napravah.</string>
     <string name="browse">Prebrskaj …</string>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Users\Felipe\.gradle\caches\modules-2\files-2.1\net.nightwhistler.htmlspanner\htmlspanner\0.5-SNAPSHOT\58eda532863010ef6d5483716b98a09841df0326\htmlspanner-0.5-SNAPSHOT.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="58eda532863010ef6d5483716b98a09841df0326">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\htmlspanner-0.5-SNAPSHOT-717e3a30441cb568173c2cc8e939f148ce07698c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Felipe\.gradle\caches\modules-2\files-2.1\ch.acra\acra\4.4.0\d2613d074b20674c3d05d6d8615292b6172d1366\acra-4.4.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="d2613d074b20674c3d05d6d8615292b6172d1366">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\acra-4.4.0-231f05864c01e541e56d645fefc8b588686cf33c.jar" />
+    </item>
+    <item
+        jar="C:\Users\Felipe\.gradle\caches\modules-2\files-2.1\org.slf4j\slf4j-android\1.6.1-RC1\fe76e182946faad493a50968f3344e848b467b42\slf4j-android-1.6.1-RC1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="fe76e182946faad493a50968f3344e848b467b42">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\slf4j-android-1.6.1-RC1-167470b746ab830c6f21e9a29dbfd79a0e2eae29.jar" />
+    </item>
+    <item
+        jar="C:\Users\Felipe\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-v4\19.0.1\support-v4-19.0.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="587da9a481ffd341d2fa091704489b89845ddacd">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\support-v4-19.0.1-2b6efcb6704794669001001584ae32e8567e6b52.jar" />
+    </item>
+    <item
+        jar="C:\Users\Felipe\.gradle\caches\modules-2\files-2.1\com.osbcp.cssparser\cssparser\1.5\354572fed1f4159827c4734930898811391ce354\cssparser-1.5.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="354572fed1f4159827c4734930898811391ce354">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\cssparser-1.5-95bf1d69b77cdafb1043962cda3e7ed6d6eb1884.jar" />
+    </item>
+    <item
+        jar="C:\Users\Felipe\.gradle\caches\modules-2\files-2.1\org.roboguice\roboguice\2.0\727ccb8f376109d0b5c44abca6f791dccc5c5dbc\roboguice-2.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="727ccb8f376109d0b5c44abca6f791dccc5c5dbc">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\roboguice-2.0-67c4bd3029fb422300337abb56ccd3111b898c67.jar" />
+    </item>
+    <item
+        jar="C:\Users\Felipe\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\1.3.9\40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf\jsr305-1.3.9.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="40719ea6961c0cb6afaeb6a921eaa1f6afd4cfdf">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\jsr305-1.3.9-7cd73fa6fb07cb145ab7bc0af6882888bc3bf849.jar" />
+    </item>
+    <item
+        jar="C:\Users\Felipe\.gradle\caches\modules-2\files-2.1\nl.siegmann.epublib\epublib-core\3.1\45f183ed222a9deca0cb911a1586297a6c4c382c\epublib-core-3.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="45f183ed222a9deca0cb911a1586297a6c4c382c">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\epublib-core-3.1-1ec598a910b191e4c540abd1b4ec32b8a534bdb3.jar" />
+    </item>
+    <item
+        jar="C:\Users\Felipe\.gradle\caches\modules-2\files-2.1\org.jdom\jdom\1.1\1d04c0f321ea337f3661cf7ede8f4c6f653a8fdd\jdom-1.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="1d04c0f321ea337f3661cf7ede8f4c6f653a8fdd">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\jdom-1.1-0b6a929609305db718adf30f4e568e4501e9ce72.jar" />
+    </item>
+    <item
+        jar="C:\Users\Felipe\.gradle\caches\modules-2\files-2.1\commons-io\commons-io\2.1\fd51f906669f49a4ffd06650666c3b8147a6106e\commons-io-2.1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="fd51f906669f49a4ffd06650666c3b8147a6106e">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\commons-io-2.1-f546092cba0797a186e9ea61397f16a1888942c4.jar" />
+    </item>
+    <item
+        jar="C:\Users\Felipe\.gradle\caches\modules-2\files-2.1\net.sourceforge.htmlcleaner\htmlcleaner\2.2\57fa6883b2f299d04a769d0daaa0c4ebf20ed4\htmlcleaner-2.2.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="0057fa6883b2f299d04a769d0daaa0c4ebf20ed4">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\htmlcleaner-2.2-c5d1e237064e84f3167dd84c60572a6fc2325f41.jar" />
+    </item>
+    <item
+        jar="C:\Users\Felipe\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\javax.inject-1-fd183f61b68ffc2d89197eb25351557d683615f9.jar" />
+    </item>
+    <item
+        jar="C:\Users\Felipe\.gradle\caches\modules-2\files-2.1\com.github.rtyley\roboguice-sherlock\1.5\ee18bc59b8abb8d39809822f4c6dfcd5afb89c1c\roboguice-sherlock-1.5.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="ee18bc59b8abb8d39809822f4c6dfcd5afb89c1c">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\roboguice-sherlock-1.5-30aaef876b841275783ed28167af7a6d56c83e0b.jar" />
+    </item>
+    <item
+        jar="C:\Users\Felipe\.gradle\caches\modules-2\files-2.1\aopalliance\aopalliance\1.0\235ba8b489512805ac13a8f9ea77a1ca5ebe3e8\aopalliance-1.0.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="0235ba8b489512805ac13a8f9ea77a1ca5ebe3e8">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\aopalliance-1.0-a29ef71fc055e9e416dd06a343bc7426fb6fde32.jar" />
+    </item>
+    <item
+        jar="C:\Users\Felipe\.gradle\caches\modules-2\files-2.1\com.google.inject\guice\3.0\28586dc97c525501329d9a242fc3402041e3572d\guice-3.0-no_aop.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="28586dc97c525501329d9a242fc3402041e3572d">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\guice-3.0-no_aop-c85eda34b581a499707d228b8162451ed32e7c24.jar" />
+    </item>
+    <item
+        jar="C:\Users\Felipe\.gradle\caches\modules-2\files-2.1\org.sonatype.sisu.inject\cglib\2.2.1-v20090111\7ce5e983fd0e6c78346f4c9cbfa39d83049dda2\cglib-2.2.1-v20090111.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="07ce5e983fd0e6c78346f4c9cbfa39d83049dda2">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\cglib-2.2.1-v20090111-35ebc9f7df7424ce355a6e998a5f192c45465562.jar" />
+    </item>
+    <item
+        jar="C:\Users\Felipe\.gradle\caches\modules-2\files-2.1\org.codehaus.jedi\jedi-core\3.0.5\e0aa551ffa9e6d0a1a75b54436cf61f66a92cb6b\jedi-core-3.0.5.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="e0aa551ffa9e6d0a1a75b54436cf61f66a92cb6b">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\jedi-core-3.0.5-5099aab0d8742e6eb5652987245ed125e8557a0f.jar" />
+    </item>
+    <item
+        jar="C:\Users\Felipe\Documents\biblioreader\build\intermediates\exploded-aar\com.actionbarsherlock\actionbarsherlock\4.4.0\classes.jar"
+        jumboMode="false"
+        revision="19.1.0"
+        sha1="af64527b748983a75de9c0756e9768b56b240a49">
+        <dex dex="C:\Users\Felipe\Documents\biblioreader\build\intermediates\pre-dexed\debug\classes-073061aa62775d1e611696028cc3a8d965d45779.jar" />
+    </item>
+
+</items>

@@ -24,6 +24,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.net.Uri;
+import android.net.wifi.WifiInfo;
+import android.net.wifi.WifiManager;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
@@ -39,6 +41,7 @@ import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
@@ -140,18 +143,10 @@ public class CatalogFragment extends RoboSherlockFragment implements LoadFeedCal
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
-
-
-
         DisplayMetrics metrics = metricsProvider.get();
         getActivity().getWindowManager().getDefaultDisplay().getMetrics(metrics);
-
         this.taskQueue.setTaskQueueListener(this::onLoadingDone);
 	}
-
-
-
 
 
 
@@ -205,6 +200,8 @@ public class CatalogFragment extends RoboSherlockFragment implements LoadFeedCal
 
 		LoadOPDSTask task = this.loadOPDSTaskProvider.get();
 		task.setCallBack(this);
+
+
 
         task.setResultType(resultType);
 		task.setAsDetailsFeed(asDetailsFeed);
@@ -599,6 +596,7 @@ public class CatalogFragment extends RoboSherlockFragment implements LoadFeedCal
         final View layout = inflater.inflate(org.eurekapp.bibliopedia.R.layout.login, null);
 
         final TextView folder = (TextView) layout.findViewById(org.eurekapp.bibliopedia.R.id.accountmail);
+        final Spinner sp = (Spinner) layout.findViewById(R.id.spinner);
 
         folder.setEnabled(true);
 
@@ -617,8 +615,9 @@ public class CatalogFragment extends RoboSherlockFragment implements LoadFeedCal
                     Log.d("PIPEEEEEE", email);
                     try {
 
-                        URL url = new URL("http://190.147.155.131:8007/woop3/webresources/entities.user/login/" + email);
+                        URL url = new URL("http://190.147.155.131:8007/woop3/webresources/entities.user/login/" + Uri.encode(email));
                         Log.d("PIPEEEEEE", url.toString());
+
 
                         HttpClient httpclient = new DefaultHttpClient();
                         HttpResponse response = httpclient.execute(new HttpGet(String.valueOf(url)));
@@ -633,13 +632,22 @@ public class CatalogFragment extends RoboSherlockFragment implements LoadFeedCal
 
                             out.close();
                             if (responseString.equalsIgnoreCase("true")) {
+                                conf.setBaseOPDSFeed("http://190.147.155.131/Bibliopedia/YopalEscolar/catalog.xml");
                                 conf.setLogged(true);
+                                conf.setEmail(email);
+                                Log.d("selecionadoo",sp.getSelectedItem().toString());
+                                conf.setInstitution(sp.getSelectedItem().toString());
+                                getActivity().setTitle("sp.getSelectedItem().toString()");
+                                //ACA CAMBIAMOS CADA UNA DE LAS OPCIONES DE LA INSTITUCION
 
                             } else {
+                                conf.setBaseOPDSFeed("");
+                                conf.setLogged(false);
                                 AlertDialog.Builder bui = new AlertDialog.Builder(getActivity());
-                                builder.setTitle("Incorrecto");
-                                builder.setMessage("Lo sentimos, su correo no es válido");
-                                builder.show();
+                                bui.setTitle("Incorrecto");
+                                bui.setMessage("Lo sentimos, su correo no es válido");
+                                bui.show();
+                                getActivity().finish();
 
                             }
 
@@ -648,9 +656,18 @@ public class CatalogFragment extends RoboSherlockFragment implements LoadFeedCal
                         } else {
                             //Closes the connection.
                             try {
-                                response.getEntity().getContent().close();
-                                Log.d("login", statusLine.getReasonPhrase());
+                                //conf.setBaseOPDSFeed("");
+                                conf.setLogged(false);
+                                AlertDialog.Builder bui = new AlertDialog.Builder(getActivity());
+                                bui.setTitle("Incorrecto");
+                                bui.setMessage("Lo sentimos, su correo no es válido");
+                                bui.show();
+                                getActivity().finish();
+                                if (response.getEntity() != null){
+                                response.getEntity().getContent().close();}
+
                             } catch (IOException e) {
+                                Log.d("login", statusLine.getReasonPhrase());
                                 e.printStackTrace();
                             }
 

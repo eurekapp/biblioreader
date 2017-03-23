@@ -2,7 +2,6 @@
 <resources>
 
 
-    <string name="app_name" translatable="false">Bibliopedia+</string>
     <string name="title">Título</string>
     <string name="app_desc">Bibliopedia es un lector de e-books.</string>
 

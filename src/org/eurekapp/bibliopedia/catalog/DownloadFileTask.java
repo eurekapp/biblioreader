@@ -19,11 +19,17 @@
 package org.eurekapp.bibliopedia.catalog;
 
 import android.content.Context;
+import android.net.Uri;
+import android.util.Log;
 
 import com.google.inject.Inject;
 import jedi.option.None;
 import jedi.option.Option;
 
+import org.apache.http.HttpStatus;
+import org.apache.http.StatusLine;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.eurekapp.bibliopedia.library.LibraryService;
 import org.eurekapp.bibliopedia.scheduling.QueueableAsyncTask;
 import org.eurekapp.bibliopedia.Configuration;
@@ -36,10 +42,15 @@ import org.apache.http.client.methods.HttpGet;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import java.io.ByteArrayOutputStream;
 import java.io.File;
 import java.io.FileOutputStream;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.UnsupportedEncodingException;
+import java.net.MalformedURLException;
+import java.net.URISyntaxException;
+import java.net.URL;
 import java.net.URLDecoder;
 import java.nio.charset.Charset;
 
@@ -180,6 +191,47 @@ public class DownloadFileTask extends QueueableAsyncTask<String, Long, Void> {
 				    //FIXME: This doesn't belong here really...
 				    Book book = new EpubReader().readEpubLazy( destFile.getAbsolutePath(), "UTF-8" );
 				    libraryService.storeBook(destFile.getAbsolutePath(), book, false, config.getCopyToLibraryOnScan() );
+
+
+					//filename reported to woop borrow
+
+					String email = config.getemail();
+					String title = book.getTitle();
+					String author = book.getMetadata().getAuthors().get(0).toString()
+							;
+					String filename = Uri.encode(destFile.getAbsolutePath());
+					URL url1 = null;
+
+					try {
+						String titauth = Uri.encode(title+" "+author);
+
+
+						url1 = new URL("http://10.7.77.221:8080/woop4/webresources/entities.borrowed/borrow/" + email + "/" + titauth + "/" + filename );
+						Log.d("PIPEx", url1.toURI().toString());
+
+						HttpClient httpclient = new DefaultHttpClient();
+						HttpResponse responsex = httpclient.execute(new HttpGet(String.valueOf(url1)));
+						StatusLine statusLine = responsex.getStatusLine();
+						if (statusLine.getStatusCode() == HttpStatus.SC_OK) {
+							ByteArrayOutputStream out = new ByteArrayOutputStream();
+
+							responsex.getEntity().writeTo(out);
+							String responseString = out.toString();
+							Log.d("PIPEx", responseString);
+						}
+					}
+					catch (MalformedURLException e) {
+						e.printStackTrace();
+
+					} catch (ClientProtocolException e) {
+						e.printStackTrace();
+					} catch (IOException e) {
+						e.printStackTrace();
+					} catch (URISyntaxException e) {
+						e.printStackTrace();
+					}
+
+
                 }
 				
 			} else {

@@ -1,0 +1,1122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="autoscroll">
+        <item>rolling_blind</item>
+        <item>timer</item>
+    </string-array>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="autoscrollLabels">
+        <item>Rolling blind</item>
+        <item>Page change timer</item>
+    </string-array>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="builtinFontLabels">
+        <item>System Default</item>
+        <item>Droid Serif</item>
+        <item>Droid Sans</item>
+        <item>Droid Sans Mono</item>        
+    </string-array>
+    <string-array name="builtinFonts">
+        <item>default</item>
+        <item>serif</item>
+        <item>sans</item>
+        <item>mono</item>
+    </string-array>
+    <string-array name="fontLabels">
+        <item>Gentium Book Basic</item>
+        <item>Gentium Basic</item>
+        <item>FrankRuehl</item>
+        <item>Droid Serif</item>
+        <item>Droid Sans</item>
+        <item>Droid Sans Mono</item>
+        <item>System Default</item>
+    </string-array>
+    <string-array name="fonts">
+        <item>gen_book_bas</item>
+        <item>gen_bas</item>
+        <item>frankruehl</item>
+        <item>serif</item>
+        <item>sans</item>
+        <item>mono</item>
+        <item>default</item>
+    </string-array>
+    <string-array name="h_anim">
+        <item>curl</item>
+        <item>slide</item>
+        <item>none</item>
+    </string-array>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="h_animLabels">
+        <item>Page flip</item>
+        <item>Slide</item>
+        <item>None</item>
+    </string-array>
+    <string-array name="institutions">
+        <item>CE LA ESMERALDA</item>
+        <item>I.E. SANTA TERESA</item>
+        <item>INSTITUCIÓN EDUCATIVA TÉCNICA AGROPECUARIA EL TALADRO</item>
+        <item>IE GABRIELA MISTRAL</item>
+        <item>I.E. TERESA DE CALCUTA</item>
+        <item>IE EL TRIUNFO</item>
+        <item>IE LA INMACULADA</item>
+        <item>IE DIVINO SALVADOR</item>
+        <item>IE LUIS CARLOS GALAN SARMIENTO</item>
+        <item>IE ANTONIO NARIÑO</item>
+        <item>IE POLICARPA SALAVARRIETA</item>
+        <item>IE LA CAMPIÑA</item>
+        <item>IE JORGE ELIECER GAITAN</item>
+        <item>IE EL PARAISO</item>
+        <item>IE MANUELA BELTRAN</item>
+        <item>IE LUCILA PIRAGAUTA</item>
+        <item>IE CARLOS LLERAS RESTREPO</item>
+        <item>MEGACOLEGIO EL PROGRESO DE LA COMUNA V</item>
+        <item>IE SAN MATEO</item>
+        <item>IE CENTRO SOCIAL</item>
+        <item>I.E. LLANO LINDO</item>
+        <item>IE BRAULIO GONZALEZ</item>
+        <item>IE LUIS HERNANDEZ VARGAS</item>
+        <item>INST TEC EMPRESARIAL</item>
+    </string-array>
+    <string-array name="libraryQueries">
+        <item>Most recently read books</item>
+        <item>Most recently added books</item>
+        <item>Unread books</item>
+        <item>All books by title</item>
+        <item>All books by author</item>
+    </string-array>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="long_short">
+        <item>normal</item>
+        <item>reversed</item>
+    </string-array>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="long_short_labels">
+        <item>Long press to open, short press for details</item>
+        <item>Short press to open, long press for details</item>
+     </string-array>
+    <string-array name="nook_touch_direction_labels">
+        <item>Top buttons move forward</item>
+        <item>Bottom buttons move forward</item>
+    </string-array>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="nook_touch_directions">
+        <item>forward</item>
+        <item>backward</item>
+    </string-array>
+    <string-array name="orientation">
+        <item>no_lock</item>
+        <item>portrait</item>
+        <item>landscape</item>
+        <item>reverse_portrait</item>
+        <item>reverse_landscape</item>
+    </string-array>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="orientationLabels">
+        <item>Don\'t lock orientation</item>
+        <item>Portrait</item>
+        <item>Landscape</item>
+        <item>Reverse Portrait</item>
+        <item>Reverse Landscape</item>
+    </string-array>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="reading_directions">
+        <item>left_to_right</item>
+        <item>right_to_left</item>
+    </string-array>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="reading_directionsLabels">
+        <item>Left to right</item>
+        <item>Right to left</item>        
+    </string-array>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/roboguice.xml -->
+    <eat-comment/>
+    <string-array name="roboguice_modules">
+    <item>org.eurekapp.bibliopedia.PageTurnerModule</item>
+  </string-array>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="supported_languages">
+ 	    <item>default</item>
+ 	    <item>en</item>
+ 	    <item>nl</item>
+ 	    <item>de</item>
+ 	    <item>es</item>
+ 	    <item>it</item>
+ 	    <item>ar</item> 	    
+ 	    <item>iw</item>
+ 	    <item>fa</item> 	    
+ 	</string-array>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="supported_languagesLabels">
+ 	    <item>Use device setting</item>
+ 	    <item>English</item>
+ 	    <item>Dutch</item>
+ 	    <item>German</item>
+ 	    <item>Spanish</item>
+ 	    <item>Italian</item>
+ 	    <item>Arabic</item> 	    
+ 	    <item>Hebrew</item>
+ 	    <item>Farsi</item>
+ 	    <item>Slovene</item>
+ 	</string-array>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/arrays.xml -->
+    <eat-comment/>
+    <string-array name="v_anim">
+        <item>slide</item>
+        <item>none</item>
+    </string-array>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/strings.xml -->
+    <eat-comment/>
+    <string-array name="v_animLabels">
+        <item>Slide</item>
+        <item>None</item>
+    </string-array>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <attr format="reference|color" name="background"/>
+    <attr format="reference|color" name="backgroundSplit"/>
+    <attr format="reference" name="divider"/>
+    <attr format="dimension" name="height"/>
+    <attr format="reference" name="subtitleTextStyle"/>
+    <attr format="reference" name="titleTextStyle"/>
+    <bool name="abs__action_bar_embed_tabs">false</bool>
+    <bool name="abs__action_bar_expanded_action_views_exclusive">true</bool>
+    <bool name="abs__config_actionMenuItemAllCaps">true</bool>
+    <bool name="abs__config_allowActionMenuItemTextWithIcon">false</bool>
+    <bool name="abs__config_showMenuShortcutsWhenKeyboardPresent">false</bool>
+    <bool name="abs__split_action_bar_is_narrow">true</bool>
+    <color name="abs__background_holo_dark">#ff000000</color>
+    <color name="abs__background_holo_light">#fff3f3f3</color>
+    <color name="abs__bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="abs__bright_foreground_disabled_holo_light">#ffb2b2b2</color>
+    <color name="abs__bright_foreground_holo_dark">@color/abs__background_holo_light</color>
+    <color name="abs__bright_foreground_holo_light">@color/abs__background_holo_dark</color>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="dark_grey">#888888</color>
+    <color name="opaque_black">#000000</color>
+    <color name="opaque_white">#ffffff</color>
+    <color name="orange">#ff5500</color>
+    <color name="translucent_black">#C0000000</color>
+    <declare-styleable name="SherlockActionBar"><attr name="navigationMode"><enum name="normal" value="0"/><enum name="listMode" value="1"/><enum name="tabMode" value="2"/></attr><attr name="displayOptions"><flag name="useLogo" value="0x1"/><flag name="showHome" value="0x2"/><flag name="homeAsUp" value="0x4"/><flag name="showTitle" value="0x8"/><flag name="showCustom" value="0x10"/><flag name="disableHome" value="0x20"/></attr><attr format="string" name="title"/><attr format="string" name="subtitle"/><attr name="titleTextStyle"/><attr name="subtitleTextStyle"/><attr format="reference" name="icon"/><attr format="reference" name="logo"/><attr name="divider"/><attr name="background"/><attr format="reference|color" name="backgroundStacked"/><attr name="backgroundSplit"/><attr format="reference" name="customNavigationLayout"/><attr name="height"/><attr format="reference" name="homeLayout"/><attr format="reference" name="progressBarStyle"/><attr format="reference" name="indeterminateProgressStyle"/><attr format="dimension" name="progressBarPadding"/><attr format="dimension" name="itemPadding"/></declare-styleable>
+    <declare-styleable name="SherlockActionMenuItemView"><attr name="android:minWidth"/></declare-styleable>
+    <declare-styleable name="SherlockActionMode"><attr name="titleTextStyle"/><attr name="subtitleTextStyle"/><attr name="background"/><attr name="backgroundSplit"/><attr name="height"/></declare-styleable>
+    <declare-styleable name="SherlockActivityChooserView"><attr format="string" name="initialActivityCount"/><attr format="reference" name="expandActivityOverflowButtonDrawable"/><attr name="android:background"/></declare-styleable>
+    <declare-styleable name="SherlockMenuGroup"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:checkableBehavior"/><attr name="android:visible"/><attr name="android:enabled"/></declare-styleable>
+    <declare-styleable name="SherlockMenuItem"><attr name="android:id"/><attr name="android:menuCategory"/><attr name="android:orderInCategory"/><attr name="android:title"/><attr name="android:titleCondensed"/><attr name="android:icon"/><attr name="android:alphabeticShortcut"/><attr name="android:numericShortcut"/><attr name="android:checkable"/><attr name="android:checked"/><attr name="android:visible"/><attr name="android:enabled"/><attr name="android:onClick"/><attr name="android:showAsAction"/><attr name="android:actionLayout"/><attr name="android:actionViewClass"/><attr name="android:actionProviderClass"/></declare-styleable>
+    <declare-styleable name="SherlockMenuView"><attr format="reference" name="itemTextAppearance"/><attr format="reference" name="horizontalDivider"/><attr format="reference" name="verticalDivider"/><attr format="color|reference" name="headerBackground"/><attr format="color|reference" name="itemBackground"/><attr format="reference" name="windowAnimationStyle"/><attr format="float" name="itemIconDisabledAlpha"/><attr format="boolean" name="preserveIconSpacing"/></declare-styleable>
+    <declare-styleable name="SherlockSearchView"><attr format="boolean" name="iconifiedByDefault"/><attr name="android:maxWidth"/><attr format="string" name="queryHint"/><attr name="android:imeOptions"/><attr name="android:inputType"/></declare-styleable>
+    <declare-styleable name="SherlockSpinner"><attr name="android:prompt"/><attr name="android:dropDownSelector"/><attr name="android:popupBackground"/><attr name="android:dropDownVerticalOffset"/><attr name="android:dropDownHorizontalOffset"/><attr name="android:dropDownWidth"/><attr name="android:popupPromptView"/><attr name="android:gravity"/></declare-styleable>
+    <declare-styleable name="SherlockTheme"><attr format="reference" name="actionBarTabStyle"/><attr format="reference" name="actionBarTabBarStyle"/><attr format="reference" name="actionBarTabTextStyle"/><attr format="reference" name="actionOverflowButtonStyle"/><attr format="reference" name="actionBarStyle"/><attr format="reference" name="actionBarSplitStyle"/><attr format="reference" name="actionBarWidgetTheme"/><attr format="dimension" name="actionBarSize"><enum name="wrap_content" value="0"/></attr><attr format="reference" name="actionBarDivider"/><attr format="reference" name="actionBarItemBackground"/><attr format="reference" name="actionMenuTextAppearance"/><attr format="color|reference" name="actionMenuTextColor"/><attr format="reference" name="actionModeStyle"/><attr format="reference" name="actionModeCloseButtonStyle"/><attr format="reference" name="actionModeBackground"/><attr format="reference" name="actionModeSplitBackground"/><attr format="reference" name="actionModeCloseDrawable"/><attr format="reference" name="actionModeShareDrawable"/><attr format="reference" name="actionModePopupWindowStyle"/><attr format="reference" name="buttonStyleSmall"/><attr format="reference" name="selectableItemBackground"/><attr format="reference" name="windowContentOverlay"/><attr format="reference" name="textAppearanceLargePopupMenu"/><attr format="reference" name="textAppearanceSmallPopupMenu"/><attr format="reference" name="textAppearanceSmall"/><attr format="color" name="textColorPrimary"/><attr format="color" name="textColorPrimaryDisableOnly"/><attr format="color" name="textColorPrimaryInverse"/><attr format="reference" name="spinnerItemStyle"/><attr format="reference" name="spinnerDropDownItemStyle"/><attr format="reference" name="searchAutoCompleteTextView"/><attr format="reference" name="searchDropdownBackground"/><attr format="reference" name="searchViewCloseIcon"/><attr format="reference" name="searchViewGoIcon"/><attr format="reference" name="searchViewSearchIcon"/><attr format="reference" name="searchViewVoiceIcon"/><attr format="reference" name="searchViewEditQuery"/><attr format="reference" name="searchViewEditQueryBackground"/><attr format="reference" name="searchViewTextField"/><attr format="reference" name="searchViewTextFieldRight"/><attr format="reference|color" name="textColorSearchUrl"/><attr format="dimension" name="searchResultListItemHeight"/><attr format="reference" name="textAppearanceSearchResultTitle"/><attr format="reference" name="textAppearanceSearchResultSubtitle"/><attr format="dimension" name="listPreferredItemHeightSmall"/><attr format="dimension" name="listPreferredItemPaddingLeft"/><attr format="dimension" name="listPreferredItemPaddingRight"/><attr format="reference" name="textAppearanceListItemSmall"/><attr format="dimension" name="windowMinWidthMajor"/><attr format="dimension" name="windowMinWidthMinor"/><attr format="reference" name="dividerVertical"/><attr format="reference" name="actionDropDownStyle"/><attr format="reference" name="actionButtonStyle"/><attr format="reference" name="homeAsUpIndicator"/><attr format="reference" name="dropDownListViewStyle"/><attr format="reference" name="popupMenuStyle"/><attr format="dimension" name="dropdownListPreferredItemHeight"/><attr format="reference" name="actionSpinnerItemStyle"/><attr format="boolean" name="windowNoTitle"/><attr format="boolean" name="windowActionBar"/><attr format="boolean" name="windowActionBarOverlay"/><attr format="boolean" name="windowActionModeOverlay"/><attr format="boolean" name="windowSplitActionBar"/><attr format="reference" name="listPopupWindowStyle"/><attr format="reference" name="activityChooserViewStyle"/><attr format="reference" name="activatedBackgroundIndicator"/><attr format="reference" name="dropDownHintAppearance"/></declare-styleable>
+    <declare-styleable name="SherlockView"><attr name="android:focusable"/></declare-styleable>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <dimen name="abs__action_bar_default_height">48dip</dimen>
+    <dimen name="abs__action_bar_icon_vertical_padding">8dip</dimen>
+    <dimen name="abs__action_bar_subtitle_bottom_margin">5dip</dimen>
+    <dimen name="abs__action_bar_subtitle_text_size">14dp</dimen>
+    <dimen name="abs__action_bar_subtitle_top_margin">-3dp</dimen>
+    <dimen name="abs__action_bar_title_text_size">18dp</dimen>
+    <dimen name="abs__action_button_min_width">56dip</dimen>
+    <dimen name="abs__config_prefDialogWidth">320dp</dimen>
+    <dimen name="abs__dropdownitem_icon_width">32dip</dimen>
+    <dimen name="abs__dropdownitem_text_padding_left">8dip</dimen>
+    <dimen name="abs__dropdownitem_text_padding_right">8dip</dimen>
+    <dimen name="abs__search_view_preferred_width">320dip</dimen>
+    <dimen name="abs__search_view_text_min_width">160dip</dimen>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/dimen.xml -->
+    <eat-comment/>
+    <dimen name="ambilwarna_hsvHeight">240dp</dimen>
+    <dimen name="ambilwarna_hsvWidth">240dp</dimen>
+    <dimen name="ambilwarna_hueWidth">30dp</dimen>
+    <dimen name="ambilwarna_spacer">8dp</dimen>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <item name="abs__action_menu_divider" type="id"/>
+    <item name="abs__action_menu_presenter" type="id"/>
+    <item name="abs__home" type="id"/>
+    <item name="abs__progress_circular" type="id"/>
+    <item name="abs__progress_horizontal" type="id"/>
+    <item name="abs__up" type="id"/>
+    <integer name="abs__max_action_buttons">2</integer>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="about">About Bibliopedia</string>
+    <string name="about_gpl">Bibliopedia is free software under the GPL v3.</string>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <string name="abs__action_bar_home_description">Navigate home</string>
+    <string name="abs__action_bar_up_description">Navigate up</string>
+    <string name="abs__action_menu_overflow_description">More options</string>
+    <string name="abs__action_mode_done">Done</string>
+    <string name="abs__activity_chooser_view_see_all">See all...</string>
+    <string name="abs__activitychooserview_choose_application">Choose an application</string>
+    <string name="abs__searchview_description_clear">Clear query</string>
+    <string name="abs__searchview_description_query">Search query</string>
+    <string name="abs__searchview_description_search">Search</string>
+    <string name="abs__searchview_description_submit">Submit query</string>
+    <string name="abs__searchview_description_voice">Voice search</string>
+    <string name="abs__shareactionprovider_share_with">Share with</string>
+    <string name="abs__shareactionprovider_share_with_application">Share with <ns1:g example="Bluetooth" id="application_name">%s</ns1:g></string>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="access_denied">Your access-key is invalid. Please visit pageturner-reader.org to obtain a valid access key.</string>
+    <string name="add">Add</string>
+    <string name="add_bookmark">Add Bookmark</string>
+    <string name="add_site">Add custom site</string>
+    <string name="add_site_header">What kind of site would you like to add?</string>
+    <string name="add_to_library">Add to library</string>
+    <string name="added_to_lib">Added to library: %s</string>
+    <string name="app_desc">Bibliopedia is an e-book reader .</string>
+    <string name="app_name" translatable="false">Bibliopedia Escolar</string>
+    <string name="book_by">By %s</string>
+    <string name="book_details">Book details</string>
+    <string name="book_failed">Could not download the book. Please try again.</string>
+    <string name="bookmark_deleted">Bookmark has been removed</string>
+    <string name="bookmark_options">Bookmark options</string>
+    <string name="bookmarks">Bookmarks</string>
+    <string name="brightness">Brightness</string>
+    <string name="browse">Browse…</string>
+    <string name="buy_now">Buy now</string>
+    <string name="c2opds_server">Calibre2OPDS</string>
+    <string name="calibre_server">Calibre content server</string>
+    <string name="cancelling">Cancelling…</string>
+    <string name="clear_note">Clear note</string>
+    <string name="cloud_bm">Cloud bookmarks</string>
+    <string name="connection_fail">Could not connect to the sync server.</string>
+    <string name="cops_server">COPS server</string>
+    <string name="copy_to_library">Copy books to my library folder</string>
+    <string name="could_not_load">Could not load text: %s</string>
+    <string name="custom_site">My custom OPDS sites</string>
+    <string name="custom_site_desc">Your own OPDS / Calibre sites. You can add sites from the Preferences screen.</string>
+    <string name="dead_link">Sorry, it looks like the link you clicked is broken.</string>
+    <string name="default_added_to_library" translatable="false">Added to library: never</string>
+    <string name="default_book_title" translatable="false">Title of the book</string>
+    <string name="default_device_name_and_progress" translatable="false">Phone - 15%</string>
+    <string name="default_filename" translatable="false">book.epub</string>
+    <string name="default_last_read" translatable="false">Last read: never</string>
+    <string name="default_timestamp" translatable="false">01-01-2012 13:44</string>
+    <string name="delete">Delete</string>
+    <string name="dictionary_lookup">Look up in Dictionary</string>
+    <string name="download">Download books</string>
+    <string name="download_complete">Download complete.\nThe book has been added to your library</string>
+    <string name="downloading">Downloading book…</string>
+    <string name="drawer_close">Drawer closed</string>
+    <string name="drawer_layout">Drawer layout</string>
+    <string name="drawer_open">Drawer open</string>
+    <string name="edit">Edit</string>
+    <string name="edit_site">Edit custom site</string>
+    <string name="empty_opds_feed">The feed was empty. Please check that you are using the correct URL.</string>
+    <string name="end_of_section">End of chapter.\nClick here to continue.</string>
+    <string name="enter_email">Cloud sync is currently disabled. To enable it, please enter an e-mail address in the preferences.</string>
+    <string name="enter_query">Please enter a search-term</string>
+    <string name="error_open_bk">Error opening book: %s</string>
+    <string name="feed_failed">Could not contact the site. Please try again.</string>
+    <string name="folder_name" translatable="false">Folder Name</string>
+    <string name="generic_server">Generic OPDS site</string>
+    <string name="google_lookup">Search on Google</string>
+    <string name="hello_world" translatable="false">Hello world!</string>
+    <string name="highlight">Highlight</string>
+    <string name="highlight_deleted">Highlight has been removed</string>
+    <string name="highlight_options">Highlight options</string>
+    <string name="highlights">Highlights</string>
+    <string name="import_books">Import Books</string>
+    <string name="import_desc">You can either scan your entire SD-Card, or specify a folder to search.</string>
+    <string name="import_errors">Some files had errors while importing:</string>
+    <string name="import_failed">Import failed</string>
+    <string name="import_this">Import this folder</string>
+    <string name="importing">Importing %1$d of %2$d</string>
+    <string name="importing_books">Importing books…</string>
+    <string name="init_tts">Initializing TTS…\nPlease wait.</string>
+    <string name="install_oi">Please install OI File Manager from the Google Play Store.</string>
+    <string name="language_switch_message">The new language setting will become active the next time you open a book.</string>
+    <string name="large_text" translatable="false">Large Text</string>
+    <string name="last_read">Last read: %s</string>
+    <string name="library">Library</string>
+    <string name="library_failed">Could not load library data.</string>
+    <string name="list_view">Switch to list view</string>
+    <string name="loading_library">Loading library…</string>
+    <string name="loading_text">Loading text…</string>
+    <string name="loading_wait">Loading, please wait</string>
+    <string name="logo">logo</string>
+    <string name="lookup_wiktionary">Search on Wiktionary</string>
+    <string name="manual_sync">Sync reading progress</string>
+    <string name="msg_name_blank">Please fill in a name.</string>
+    <string name="msg_url_blank">Please fill in a URL.</string>
+    <string name="never_read">Never</string>
+    <string name="next_page">Next page…</string>
+    <string name="no_author_byline">by John Doe</string>
+    <string name="no_bks_fnd_text">No books were found on your device.\nYou can download books at gutenberg.org or feedbooks.com</string>
+    <string name="no_bks_fnd_text2">No books were found on your device.\nWould you like to download some books?</string>
+    <string name="no_books_found">No books found.</string>
+    <string name="no_custom_sites">You don\'t have any custom sites defined. Please add some in the preferences.</string>
+    <string name="no_new_books_found">The scan did not find any new books.</string>
+    <string name="no_search_results">Your search yielded no results.</string>
+    <string name="no_such_folder">The folder %s does not exist.</string>
+    <string name="no_sync_points">You don\'t have any cloud-sync points stored yet.\nSync points are stored automatically when you leave Bibliopedia.</string>
+    <string name="notes_attached">This highlight has an attached text note.\nAre you sure you to delete it?</string>
+    <string name="now_reading">Now reading: %s</string>
+    <string name="opds_settings">OPDS settings</string>
+    <string name="open_file">Open ePub file</string>
+    <string name="open_library">My Books</string>
+    <string name="opening_file">Opening file…</string>
+    <string name="out_of_memory">Sorry, Bibliopedia could not free enough memory to load this file.</string>
+    <string name="page_number_of">Page %1$d of %2$d</string>
+    <string name="pref_accept_self_signed">Accept self-signed certificates</string>
+    <string name="pref_accept_self_signed_summary">Allows you to connect to OPDS sites which use self-signed certificates.</string>
+    <string name="pref_access_key">Access Key</string>
+    <string name="pref_access_key_message">Please enter your access key.</string>
+    <string name="pref_access_key_summary">An access key is required to use the synchronization service. Visit the site to learn how to get a key.</string>
+    <string name="pref_acra">Send error reports</string>
+    <string name="pref_acra_summary">Allow Bibliopedia to send anonymous error reports when it crashes.</string>
+    <string name="pref_allow_css_colours">Allow the book to set colours</string>
+    <string name="pref_always_open_book">Always open last book</string>
+    <string name="pref_always_open_book_summary">Bibliopedia will always start in the last read book instead of last open screen.</string>
+    <string name="pref_animations">Animations</string>
+    <string name="pref_autoscroll_settings">Autoscroll settings</string>
+    <string name="pref_calibre_password">Password</string>
+    <string name="pref_calibre_password_summary">Your calibre password</string>
+    <string name="pref_calibre_server">Calibre content server</string>
+    <string name="pref_calibre_server_hint">http://192.168.1.1:8080/opds</string>
+    <string name="pref_calibre_server_message">Calibre URL</string>
+    <string name="pref_calibre_server_summary">Connect to your own Calibre library</string>
+    <string name="pref_calibre_user">User name</string>
+    <string name="pref_calibre_user_hint">calibre</string>
+    <string name="pref_calibre_user_summary">Your calibre user name</string>
+    <string name="pref_colour_settings">Colour settings</string>
+    <string name="pref_copy_to_library">Copy to library folder</string>
+    <string name="pref_copy_to_library_summary">Should Bibliopedia copy files to its own library folder</string>
+    <string name="pref_css_colours_day_summary">For day mode</string>
+    <string name="pref_css_colours_night_summary">For night mode</string>
+    <string name="pref_day_bg">Background colour</string>
+    <string name="pref_day_bg_summary">For day mode</string>
+    <string name="pref_day_bright">Screen brightness</string>
+    <string name="pref_day_bright_summary">For day mode</string>
+    <string name="pref_day_link">Link colour</string>
+    <string name="pref_day_link_summary">For day mode</string>
+    <string name="pref_day_night">Screen brightness</string>
+    <string name="pref_day_night_summary">For night mode</string>
+    <string name="pref_day_text">Text colour</string>
+    <string name="pref_day_text_summary">For day mode</string>
+    <string name="pref_dev_settings">Development settings</string>
+    <string name="pref_device_name">Device name</string>
+    <string name="pref_device_name_message">Please enter a name for this device.</string>
+    <string name="pref_device_name_summary">Unique name for this device, for conflict resolution.</string>
+    <string name="pref_dim_system_ui">Dim System UI</string>
+    <string name="pref_dim_system_ui_summary">Dims the System UI buttons when reading in fullscreen mode.</string>
+    <string name="pref_email">E-mail address</string>
+    <string name="pref_email_message">Please enter a valid e-mail address</string>
+    <string name="pref_email_summary">Used to sync your progress across devices. Leave blank to disable syncing.</string>
+    <string name="pref_font_face">Font face</string>
+    <string name="pref_font_face_summary">Main font for text display</string>
+    <string name="pref_full_screen">Full screen</string>
+    <string name="pref_full_screen_summary">Hides all status bars.</string>
+    <string name="pref_h_animation">Horizontal animations</string>
+    <string name="pref_h_animation_summary">Horizontal page change animations</string>
+    <string name="pref_itext_size">Text size</string>
+    <string name="pref_itext_size_summary">The size of the font used for displaying books.</string>
+    <string name="pref_keep_screen_on">Keep screen on</string>
+    <string name="pref_keep_screen_on_summary">Prevents the screen from locking while reading</string>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/arrays.xml -->
+    <eat-comment/>
+    <string name="pref_key">PageTurnerState</string>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="pref_lang">UI Language</string>
+    <string name="pref_lang_summary">Allows you to switch Bibliopedia\'s language settings.</string>
+    <string name="pref_line_spacing">Line spacing</string>
+    <string name="pref_line_spacing_summary">Adds extra vertical space between lines.</string>
+    <string name="pref_long_short">Switch long press / short press</string>
+    <string name="pref_long_short_summary">How to open books in the library</string>
+    <string name="pref_manage_sites">Bibliotecas</string>
+    <string name="pref_manage_sites_summary">Add and remove custom online catalogs and Calibre servers.</string>
+    <string name="pref_margin_h">Horizontal margins</string>
+    <string name="pref_margin_h_summary">Space on the left and right edge of the screen.</string>
+    <string name="pref_margin_v">Vertical margins</string>
+    <string name="pref_margin_v_summary">Space on the top and bottom edge of the screen.</string>
+    <string name="pref_my_books_settings">My Books settings</string>
+    <string name="pref_nav_swipe_h">Enable horizontal swiping</string>
+    <string name="pref_nav_swipe_h_summary">Swipe left/right to change pages.</string>
+    <string name="pref_nav_swipe_v">Enable vertical swiping</string>
+    <string name="pref_nav_swipe_v_summary">Swipe up/down to change pages.</string>
+    <string name="pref_nav_tap_h">Enable tapping sides</string>
+    <string name="pref_nav_tap_h_summary">Tap the left/right edge of the screen to change pages.</string>
+    <string name="pref_nav_tap_v">Enable tapping top/bottom</string>
+    <string name="pref_nav_tap_v_summary">Tap the top/bottom edge of the screen to change pages.</string>
+    <string name="pref_nav_vol">Enable volume buttons</string>
+    <string name="pref_nav_vol_summary">Press volume up/down to change pages.</string>
+    <string name="pref_navigation_settings">Navigation settings</string>
+    <string name="pref_night_bg">Background colour</string>
+    <string name="pref_night_bg_summary">For night mode</string>
+    <string name="pref_night_link">Link colour</string>
+    <string name="pref_night_link_summary">For night mode</string>
+    <string name="pref_night_text">Text colour</string>
+    <string name="pref_night_text_summary">For night mode</string>
+    <string name="pref_nook_touch">Nook Touch Preferences</string>
+    <string name="pref_nook_touch_button_nav">Button Navigation</string>
+    <string name="pref_nook_touch_button_nav_summary">How should the buttons on the side of the Nook turn the page?</string>
+    <string name="pref_reading_direction">Reading direction</string>
+    <string name="pref_reading_direction_summary">Read left to right or right to left (Hebrew and Arabic)</string>
+    <string name="pref_sans_serif_font">Sans-Serif font</string>
+    <string name="pref_sans_serif_summary">Font to use if a book requests a Sans-Serif font.</string>
+    <string name="pref_screen_orientation">Screen orientation</string>
+    <string name="pref_screen_orientation_summary">Allows you to lock the screen orientation</string>
+    <string name="pref_scroll_speed">Autoscrolling speed</string>
+    <string name="pref_scroll_speed_summary">How many seconds a page will be displayed.</string>
+    <string name="pref_scroll_style">Autoscroll style</string>
+    <string name="pref_scroll_style_summary">Rolling blind or timer</string>
+    <string name="pref_scrolling">Enable scrolling</string>
+    <string name="pref_scrolling_summary">Enabled browser-style scrolling</string>
+    <string name="pref_serif_font">Serif font</string>
+    <string name="pref_serif_summary">Font to use if a book requests a Serif font.</string>
+    <string name="pref_set_brightness">Brightness controls</string>
+    <string name="pref_set_brightness_summary">Lets Bibliopedia control screen brightness</string>
+    <string name="pref_show_pagenum">Show page numbers</string>
+    <string name="pref_show_pagenum_summary">Shows page numbers while reading. It may take a few seconds for page numbers to be displayed the first time.</string>
+    <string name="pref_strip_whitespace">Strip whitespace</string>
+    <string name="pref_strip_whitespace_summary">Strips out unneeded blank lines.</string>
+    <string name="pref_sync_server">Sync Server</string>
+    <string name="pref_sync_server_message">Please enter a sync server url.</string>
+    <string name="pref_sync_server_summary">Select which server you would like to sync with.</string>
+    <string name="pref_sync_settings">Sync settings</string>
+    <string name="pref_text_display_settings">Text display settings</string>
+    <string name="pref_use_publisher_style">Use Publisher style (CSS)</string>
+    <string name="pref_use_publisher_style_summary">Allow the book to change fonts, colours, etc.</string>
+    <string name="pref_v_animation">Vertical animations</string>
+    <string name="pref_v_animation_summary">Vertical page change animations</string>
+    <string name="pref_visual_settings">Visual settings</string>
+    <string name="prefs">Settings</string>
+    <string name="prev_page">Previous page…</string>
+    <string name="profile_day">Switch to day mode</string>
+    <string name="profile_night">Switch to night mode</string>
+    <string name="read">Read now</string>
+    <string name="rolling_blind">Auto-scroll</string>
+    <string name="save">Save changes</string>
+    <string name="save_note">Save note</string>
+    <string name="scan_bks_question">There are no books in your library.\nWould you like to scan your device for books?</string>
+    <string name="scan_books">Scan for books</string>
+    <string name="scan_folder">Scan a specific folder</string>
+    <string name="scan_folders">Scanning for EPUB files.\nFolders scanned: %d</string>
+    <string name="scan_whole_card">Scan my entire SD Card</string>
+    <string name="scanning_epub">Scanning for EPUB files.</string>
+    <string name="search_books">Search for books</string>
+    <string name="search_cancelled">Search cancelled.</string>
+    <string name="search_hits">Searching…\nFound %d matches.</string>
+    <string name="search_library">Search library</string>
+    <string name="search_no_matches">Search did not find any matches.</string>
+    <string name="search_results">Search results</string>
+    <string name="search_results_item">Search results…</string>
+    <string name="search_text">Text search</string>
+    <string name="search_wait">Searching… please wait.</string>
+    <string name="set_colour">Set colour</string>
+    <string name="shelves_view">Switch to shelves view</string>
+    <string name="show_toc">Show TOC</string>
+    <string name="site_desc">Description</string>
+    <string name="site_name">Site name</string>
+    <string name="site_password">Password</string>
+    <string name="site_url">Site URL</string>
+    <string name="site_username">Username</string>
+    <string name="small_text" translatable="false">Small Text</string>
+    <string name="sync_failed">Sync failed</string>
+    <string name="syncing">"Syncing progress…"</string>
+    <string name="text_note">Text note</string>
+    <string name="text_to_speech">Read out loud (TTS)</string>
+    <string name="title">Title</string>
+    <string name="toc_label">Table of contents</string>
+    <string name="tts_failed">TTS Failed.</string>
+    <string name="view_details">View details</string>
+    <string name="wikipedia_lookup">Search on Wikipedia</string>
+    <string name="word_select">"You selected '%s'</string>
+    <string name="zero_percent" translatable="false">0%  </string>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="AppBaseTheme" parent="Theme.Sherlock">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <style name="ButtonBar">
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:background">@android:drawable/bottom_bar</item>
+    </style>
+    <style name="ButtonBarButton"/>
+    <style name="DarkFullScreen" parent="Theme.Sherlock">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:windowActionBarOverlay">true</item>
+        <item name="android:actionBarStyle">@style/Widget.MyTheme.ActionBar</item>
+    </style>
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">?android:attr/listDivider</item>
+    </style>
+    <style name="LightFullScreen" parent="Theme.Sherlock.Light.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+        <item name="android:windowActionBarOverlay">true</item>
+    </style>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Sherlock.__TextAppearance.Small" parent="Widget">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="Sherlock.__Theme" parent="android:Theme.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Sherlock.__Theme.DarkActionBar" parent="Theme.Sherlock.Light"/>
+    <style name="Sherlock.__Theme.Light" parent="android:Theme.Light.NoTitleBar">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="Sherlock.__Widget.ActionBar" parent="Widget">
+        <item name="displayOptions">useLogo|showHome|showTitle</item>
+        <item name="height">?attr/actionBarSize</item>
+        <item name="android:paddingLeft">0dip</item>
+        <item name="android:paddingTop">0dip</item>
+        <item name="android:paddingRight">0dip</item>
+        <item name="android:paddingBottom">0dip</item>
+        <item name="homeLayout">@layout/abs__action_bar_home</item>
+    </style>
+    <style name="Sherlock.__Widget.ActionMode" parent="Widget">
+        <item name="background">?attr/actionModeBackground</item>
+        <item name="backgroundSplit">?attr/actionModeSplitBackground</item>
+        <item name="height">?attr/actionBarSize</item>
+    </style>
+    <style name="Sherlock.__Widget.ActivityChooserView" parent="Widget">
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/abs__ab_share_pack_holo_dark</item>
+        <item name="android:divider">?attr/dividerVertical</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">6dip</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+    </style>
+    <style name="Sherlock.__Widget.Holo.DropDownItem" parent="Widget">
+        <item name="android:textAppearance">@style/TextAppearance.Sherlock.Widget.DropDownItem</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+    <style name="Sherlock.__Widget.Holo.ListView" parent="android:Widget.ListView">
+        <item name="android:divider">@drawable/abs__list_divider_holo_dark</item>
+        <item name="android:listSelector">@drawable/abs__list_selector_holo_dark</item>
+    </style>
+    <style name="Sherlock.__Widget.Holo.Spinner" parent="Widget">
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_dark</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_dark</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:spinnerMode">dropdown</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="Sherlock.__Widget.SearchAutoCompleteTextView" parent="Widget">
+        <item name="android:focusable">true</item>
+        <item name="android:focusableInTouchMode">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMediumInverse</item>
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:completionHintView">@layout/abs__simple_dropdown_hint</item>
+        <item name="android:completionThreshold">2</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+    </style>
+    <style name="TextAppearance.Sherlock" parent="@android:style/TextAppearance"/>
+    <style name="TextAppearance.Sherlock.Light.SearchResult" parent="TextAppearance.Sherlock.SearchResult"/>
+    <style name="TextAppearance.Sherlock.Light.SearchResult.Subtitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Light.SearchResult.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Light.Small" parent="TextAppearance.Sherlock.Small"/>
+    <style name="TextAppearance.Sherlock.Light.Widget.PopupMenu.Large" parent="TextAppearance.Sherlock.Widget.PopupMenu.Large"/>
+    <style name="TextAppearance.Sherlock.Light.Widget.PopupMenu.Small" parent="TextAppearance.Sherlock.Widget.PopupMenu.Small"/>
+    <style name="TextAppearance.Sherlock.SearchResult">
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+        <item name="android:textColorHint">?android:attr/textColorHint</item>
+    </style>
+    <style name="TextAppearance.Sherlock.SearchResult.Subtitle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.SearchResult.Title">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Small" parent="Sherlock.__TextAppearance.Small"/>
+    <style name="TextAppearance.Sherlock.Widget.ActionBar.Menu" parent="Widget">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">?attr/actionMenuTextColor</item>
+        <item name="android:textAllCaps">@bool/abs__config_actionMenuItemAllCaps</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionBar.Subtitle" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_subtitle_text_size</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionBar.Subtitle.Inverse" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_subtitle_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionBar.Title" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_title_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionBar.Title.Inverse" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_title_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionMode.Subtitle" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_subtitle_text_size</item>
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionMode.Subtitle.Inverse" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_subtitle_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionMode.Title" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_title_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.ActionMode.Title.Inverse" parent="Widget">
+        <item name="android:textSize">@dimen/abs__action_bar_title_text_size</item>
+        <item name="android:textColor">?android:attr/textColorPrimaryInverse</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.DropDownHint" parent="Widget">
+        <item name="android:textColor">?textColorPrimary</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.DropDownItem" parent="Widget">
+        <item name="android:textColor">?textColorPrimaryDisableOnly</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.PopupMenu" parent="Widget">
+        <item name="android:textColor">?attr/textColorPrimary</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.PopupMenu.Large">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.PopupMenu.Small">
+        <item name="android:textSize">14sp</item>
+    </style>
+    <style name="TextAppearance.Sherlock.Widget.TextView.SpinnerItem" parent="Widget">
+        <item name="android:textColor">?textColorPrimary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="Theme.Sherlock" parent="Sherlock.__Theme">
+
+        <!-- Action bar styles (from Theme.Holo) -->
+        <item name="actionDropDownStyle">@style/Widget.Sherlock.Spinner.DropDown.ActionBar</item>
+        <item name="actionButtonStyle">@style/Widget.Sherlock.ActionButton</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.Sherlock.ActionButton.Overflow</item>
+        <item name="actionModeBackground">@drawable/abs__cab_background_top_holo_dark</item>
+        <item name="actionModeSplitBackground">@drawable/abs__cab_background_bottom_holo_dark</item>
+        <item name="actionModeCloseDrawable">@drawable/abs__ic_cab_done_holo_dark</item>
+        <item name="actionBarTabStyle">@style/Widget.Sherlock.ActionBar.TabView</item>
+        <item name="actionBarTabBarStyle">@style/Widget.Sherlock.ActionBar.TabBar</item>
+        <item name="actionBarTabTextStyle">@style/Widget.Sherlock.ActionBar.TabText</item>
+        <item name="actionModeStyle">@style/Widget.Sherlock.ActionMode</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.Sherlock.ActionButton.CloseMode</item>
+        <item name="actionBarStyle">@style/Widget.Sherlock.ActionBar</item>
+        <item name="actionBarSize">@dimen/abs__action_bar_default_height</item>
+        <!-- Internal -->
+        <item name="actionModePopupWindowStyle">@style/Widget.Sherlock.PopupWindow.ActionMode</item>
+        <item name="actionBarWidgetTheme">@null</item>
+
+        <!-- Action bar styles (defaults from Theme) -->
+        <item name="actionBarSplitStyle">?attr/actionBarStyle</item>
+        <item name="actionMenuTextAppearance">@style/TextAppearance.Sherlock.Widget.ActionBar.Menu</item>
+        <item name="actionMenuTextColor">?attr/textColorPrimary</item>
+        <item name="actionBarDivider">?attr/dividerVertical</item>
+        <item name="actionBarItemBackground">?attr/selectableItemBackground</item>
+        <item name="buttonStyleSmall">@style/Widget.Sherlock.Button.Small</item>
+        <item name="selectableItemBackground">@drawable/abs__item_background_holo_dark</item>
+        <item name="activatedBackgroundIndicator">@drawable/abs__activated_background_holo_dark</item>
+        <item name="actionModeShareDrawable">@drawable/abs__ic_menu_share_holo_dark</item>
+        <item name="activityChooserViewStyle">@style/Widget.Sherlock.ActivityChooserView</item>
+        <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>
+        <item name="dividerVertical">@drawable/abs__list_divider_holo_dark</item>
+        <item name="spinnerDropDownItemStyle">@style/Widget.Sherlock.DropDownItem.Spinner</item>
+        <item name="spinnerItemStyle">@style/Widget.Sherlock.TextView.SpinnerItem</item>
+        <item name="textColorPrimary">@color/abs__primary_text_holo_dark</item>
+        <item name="textColorPrimaryDisableOnly">@color/abs__primary_text_disable_only_holo_dark</item>
+        <item name="textColorPrimaryInverse">@color/abs__primary_text_holo_light</item>
+
+        <!-- Internal -->
+        <item name="dropdownListPreferredItemHeight">48dip</item>
+        <item name="dropDownListViewStyle">@style/Widget.Sherlock.ListView.DropDown</item>
+        <item name="textAppearanceSmall">@style/TextAppearance.Sherlock.Small</item>
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.Sherlock.Widget.PopupMenu.Large</item>
+        <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.Sherlock.Widget.PopupMenu.Small</item>
+        <item name="textAppearanceSearchResultTitle">@style/TextAppearance.Sherlock.SearchResult.Title</item>
+        <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.Sherlock.SearchResult.Subtitle</item>
+        <item name="popupMenuStyle">@style/Widget.Sherlock.PopupMenu</item>
+        <!-- Internal -->
+        <item name="listPopupWindowStyle">@style/Widget.Sherlock.ListPopupWindow</item>
+        <item name="searchDropdownBackground">@drawable/abs__search_dropdown_dark</item>
+        <item name="searchViewTextField">@drawable/abs__textfield_searchview_holo_dark</item>
+        <item name="searchViewTextFieldRight">@drawable/abs__textfield_searchview_right_holo_dark</item>
+        <item name="searchViewCloseIcon">@drawable/abs__ic_clear</item>
+        <item name="searchViewSearchIcon">@drawable/abs__ic_search</item>
+        <item name="searchViewGoIcon">@drawable/abs__ic_go</item>
+        <item name="searchViewVoiceIcon">@drawable/abs__ic_voice_search</item>
+        <item name="searchAutoCompleteTextView">@style/Widget.Sherlock.SearchAutoCompleteTextView</item>
+        <item name="dropDownHintAppearance">@style/TextAppearance.Sherlock.Widget.DropDownHint</item>
+        <item name="searchViewEditQuery">@drawable/abs__ic_commit_search_api_holo_dark</item>
+        <item name="searchViewEditQueryBackground">?selectableItemBackground</item>
+        <item name="searchResultListItemHeight">58dp</item>
+        <item name="windowNoTitle">false</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowActionModeOverlay">false</item>
+        <item name="windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.Sherlock.Light" parent="Sherlock.__Theme.Light">
+
+        <!-- Action bar styles (from Theme.Holo) -->
+        <item name="actionDropDownStyle">@style/Widget.Sherlock.Light.Spinner.DropDown.ActionBar</item>
+        <item name="actionButtonStyle">@style/Widget.Sherlock.Light.ActionButton</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.Sherlock.Light.ActionButton.Overflow</item>
+        <item name="actionModeBackground">@drawable/abs__cab_background_top_holo_light</item>
+        <item name="actionModeSplitBackground">@drawable/abs__cab_background_bottom_holo_light</item>
+        <item name="actionModeCloseDrawable">@drawable/abs__ic_cab_done_holo_light</item>
+        <item name="actionBarTabStyle">@style/Widget.Sherlock.Light.ActionBar.TabView</item>
+        <item name="actionBarTabBarStyle">@style/Widget.Sherlock.Light.ActionBar.TabBar</item>
+        <item name="actionBarTabTextStyle">@style/Widget.Sherlock.Light.ActionBar.TabText</item>
+        <item name="actionModeStyle">@style/Widget.Sherlock.Light.ActionMode</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.Sherlock.Light.ActionButton.CloseMode</item>
+        <item name="actionBarStyle">@style/Widget.Sherlock.Light.ActionBar.Solid</item>
+        <item name="actionBarSize">@dimen/abs__action_bar_default_height</item>
+        <!-- Internal -->
+        <item name="actionModePopupWindowStyle">@style/Widget.Sherlock.Light.PopupWindow.ActionMode</item>
+        <item name="actionBarWidgetTheme">@null</item>
+
+        <!-- Action bar styles (defaults from Theme) -->
+        <item name="actionBarSplitStyle">?attr/actionBarStyle</item>
+        <item name="actionMenuTextAppearance">@style/TextAppearance.Sherlock.Widget.ActionBar.Menu</item>
+        <item name="actionMenuTextColor">?attr/textColorPrimary</item>
+        <item name="actionBarDivider">?attr/dividerVertical</item>
+        <item name="actionBarItemBackground">?attr/selectableItemBackground</item>
+        <item name="buttonStyleSmall">@style/Widget.Sherlock.Light.Button.Small</item>
+        <item name="selectableItemBackground">@drawable/abs__item_background_holo_light</item>
+        <item name="activatedBackgroundIndicator">@drawable/abs__activated_background_holo_light</item>
+        <item name="actionModeShareDrawable">@drawable/abs__ic_menu_share_holo_light</item>
+        <item name="activityChooserViewStyle">@style/Widget.Sherlock.Light.ActivityChooserView</item>
+        <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_light</item>
+        <item name="dividerVertical">@drawable/abs__list_divider_holo_light</item>
+        <item name="spinnerDropDownItemStyle">@style/Widget.Sherlock.Light.DropDownItem.Spinner</item>
+        <item name="spinnerItemStyle">@style/Widget.Sherlock.TextView.SpinnerItem</item>
+        <item name="textColorPrimary">@color/abs__primary_text_holo_light</item>
+        <item name="textColorPrimaryDisableOnly">@color/abs__primary_text_disable_only_holo_light</item>
+        <item name="textColorPrimaryInverse">@color/abs__primary_text_holo_dark</item>
+
+        <!-- Internal -->
+        <item name="dropdownListPreferredItemHeight">48dip</item>
+        <item name="dropDownListViewStyle">@style/Widget.Sherlock.Light.ListView.DropDown</item>
+        <item name="textAppearanceSmall">@style/TextAppearance.Sherlock.Light.Small</item>
+        <item name="textAppearanceLargePopupMenu">@style/TextAppearance.Sherlock.Light.Widget.PopupMenu.Large</item>
+        <item name="textAppearanceSmallPopupMenu">@style/TextAppearance.Sherlock.Light.Widget.PopupMenu.Small</item>
+        <item name="textAppearanceSearchResultTitle">@style/TextAppearance.Sherlock.Light.SearchResult.Title</item>
+        <item name="textAppearanceSearchResultSubtitle">@style/TextAppearance.Sherlock.Light.SearchResult.Subtitle</item>
+        <item name="popupMenuStyle">@style/Widget.Sherlock.Light.PopupMenu</item>
+        <!-- Internal -->
+        <item name="listPopupWindowStyle">@style/Widget.Sherlock.Light.ListPopupWindow</item>
+        <item name="searchDropdownBackground">@drawable/abs__search_dropdown_light</item>
+        <item name="searchViewTextField">@drawable/abs__textfield_searchview_holo_light</item>
+        <item name="searchViewTextFieldRight">@drawable/abs__textfield_searchview_right_holo_light</item>
+        <item name="searchViewCloseIcon">@drawable/abs__ic_clear_holo_light</item>
+        <item name="searchViewSearchIcon">@drawable/abs__ic_search_api_holo_light</item>
+        <item name="searchViewGoIcon">@drawable/abs__ic_go_search_api_holo_light</item>
+        <item name="searchViewVoiceIcon">@drawable/abs__ic_voice_search_api_holo_light</item>
+        <item name="searchAutoCompleteTextView">@style/Widget.Sherlock.Light.SearchAutoCompleteTextView</item>
+        <item name="dropDownHintAppearance">@style/TextAppearance.Sherlock.Widget.DropDownHint</item>
+        <item name="searchViewEditQuery">@drawable/abs__ic_commit_search_api_holo_light</item>
+        <item name="searchViewEditQueryBackground">?selectableItemBackground</item>
+        <item name="searchResultListItemHeight">58dp</item>
+        <item name="windowNoTitle">false</item>
+        <item name="windowActionBar">true</item>
+        <item name="windowActionModeOverlay">false</item>
+        <item name="windowContentOverlay">@null</item>
+    </style>
+    <style name="Theme.Sherlock.Light.DarkActionBar" parent="Sherlock.__Theme.DarkActionBar">
+        <item name="windowContentOverlay">@drawable/abs__ab_solid_shadow_holo</item>
+        <item name="actionBarStyle">@style/Widget.Sherlock.Light.ActionBar.Solid.Inverse</item>
+        <item name="actionBarWidgetTheme">@style/Theme.Sherlock</item>
+        <item name="actionDropDownStyle">@style/Widget.Sherlock.Spinner.DropDown.ActionBar</item>
+        <item name="actionButtonStyle">@style/Widget.Sherlock.ActionButton</item>
+        <item name="actionOverflowButtonStyle">@style/Widget.Sherlock.ActionButton.Overflow</item>
+        <item name="actionModeBackground">@drawable/abs__cab_background_top_holo_dark</item>
+        <item name="actionModeSplitBackground">@drawable/abs__cab_background_bottom_holo_dark</item>
+        <item name="actionModeCloseDrawable">@drawable/abs__ic_cab_done_holo_dark</item>
+        <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_dark</item>
+        <item name="actionBarTabStyle">@style/Widget.Sherlock.Light.ActionBar.TabView.Inverse</item>
+        <item name="actionBarTabBarStyle">@style/Widget.Sherlock.Light.ActionBar.TabBar.Inverse</item>
+        <item name="actionBarTabTextStyle">@style/Widget.Sherlock.Light.ActionBar.TabText.Inverse</item>
+        <item name="actionBarDivider">@drawable/abs__list_divider_holo_dark</item>
+        <item name="actionBarItemBackground">@drawable/abs__item_background_holo_dark</item>
+        <item name="actionMenuTextColor">?attr/textColorPrimaryInverse</item>
+        <item name="actionModeStyle">@style/Widget.Sherlock.Light.ActionMode.Inverse</item>
+        <item name="actionModeCloseButtonStyle">@style/Widget.Sherlock.ActionButton.CloseMode</item>
+        <item name="actionModePopupWindowStyle">@style/Widget.Sherlock.PopupWindow.ActionMode</item>
+        <item name="actionModeShareDrawable">@drawable/abs__ic_menu_share_holo_dark</item>
+
+        <!-- We want the dark action bar SearchView stuff -->
+        <item name="searchDropdownBackground">@drawable/abs__search_dropdown_dark</item>
+        <item name="searchViewTextField">@drawable/abs__textfield_searchview_holo_dark</item>
+        <item name="searchViewTextFieldRight">@drawable/abs__textfield_searchview_right_holo_dark</item>
+        <item name="searchViewCloseIcon">@drawable/abs__ic_clear</item>
+        <item name="searchViewSearchIcon">@drawable/abs__ic_search</item>
+        <item name="searchViewGoIcon">@drawable/abs__ic_go</item>
+        <item name="searchViewVoiceIcon">@drawable/abs__ic_voice_search</item>
+        <item name="searchAutoCompleteTextView">@style/Widget.Sherlock.SearchAutoCompleteTextView</item>
+        <item name="dropDownHintAppearance">@style/TextAppearance.Sherlock.Widget.DropDownHint</item>
+        <item name="searchViewEditQuery">@drawable/abs__ic_commit_search_api_holo_dark</item>
+    </style>
+    <style name="Theme.Sherlock.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Sherlock.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="Widget"/>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="Widget.MyTheme.ActionBar" parent="Widget.Sherlock.ActionBar">
+            <item name="android:background">#80000000</item>
+            <item name="background">#80000000</item>
+     </style>
+    <!-- From: file:/C:/Users/Felipe/Documents/biblioreader/build/intermediates/exploded-aar/com.actionbarsherlock/actionbarsherlock/4.4.0/res/values/values.xml -->
+    <eat-comment/>
+    <style name="Widget.Sherlock.ActionBar" parent="Sherlock.__Widget.ActionBar">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Subtitle</item>
+        <item name="background">@drawable/abs__ab_transparent_dark_holo</item>
+        <item name="backgroundStacked">@drawable/abs__ab_stacked_transparent_dark_holo</item>
+        <item name="backgroundSplit">@drawable/abs__ab_bottom_transparent_dark_holo</item>
+        <item name="divider">?attr/dividerVertical</item>
+        <item name="progressBarStyle">@style/Widget.Sherlock.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.Sherlock.ProgressBar</item>
+        <item name="progressBarPadding">32dip</item>
+        <item name="itemPadding">8dip</item>
+    </style>
+    <style name="Widget.Sherlock.ActionBar.Solid" parent="Sherlock.__Widget.ActionBar">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Subtitle</item>
+        <item name="background">@drawable/abs__ab_solid_dark_holo</item>
+        <item name="backgroundStacked">@drawable/abs__ab_stacked_solid_dark_holo</item>
+        <item name="backgroundSplit">@drawable/abs__ab_bottom_solid_dark_holo</item>
+        <item name="divider">?attr/dividerVertical</item>
+        <item name="progressBarStyle">@style/Widget.Sherlock.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.Sherlock.ProgressBar</item>
+        <item name="progressBarPadding">32dip</item>
+        <item name="itemPadding">8dip</item>
+    </style>
+    <style name="Widget.Sherlock.ActionBar.TabBar" parent="Widget">
+        <item name="android:divider">?attr/actionBarDivider</item>
+        <item name="android:showDividers">middle</item>
+        <item name="android:dividerPadding">12dip</item>
+    </style>
+    <style name="Widget.Sherlock.ActionBar.TabText" parent="Widget">
+        <item name="android:textAppearance">@null</item>
+        <item name="android:textColor">?attr/textColorPrimary</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="Widget.Sherlock.ActionBar.TabView" parent="Widget">
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:background">@drawable/abs__tab_indicator_ab_holo</item>
+        <item name="android:paddingLeft">16dip</item>
+        <item name="android:paddingRight">16dip</item>
+    </style>
+    <style name="Widget.Sherlock.ActionButton" parent="Widget">
+        <item name="android:background">?attr/actionBarItemBackground</item>
+        <item name="android:minHeight">?attr/actionBarSize</item>
+        <item name="android:minWidth">@dimen/abs__action_button_min_width</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">12dip</item>
+        <item name="android:paddingRight">12dip</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="Widget.Sherlock.ActionButton.CloseMode">
+        <item name="android:background">@drawable/abs__btn_cab_done_holo_dark</item>
+    </style>
+    <style name="Widget.Sherlock.ActionButton.Overflow">
+        <item name="android:src">@drawable/abs__ic_menu_moreoverflow_holo_dark</item>
+        <item name="android:background">?attr/actionBarItemBackground</item>
+        <item name="android:contentDescription">@string/abs__action_menu_overflow_description</item>
+    </style>
+    <style name="Widget.Sherlock.ActionMode" parent="Sherlock.__Widget.ActionMode">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Subtitle</item>
+    </style>
+    <style name="Widget.Sherlock.ActivityChooserView" parent="Sherlock.__Widget.ActivityChooserView"/>
+    <style name="Widget.Sherlock.Button.Small" parent="Widget">
+        <item name="android:textAppearance">?attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/abs__primary_text_holo_dark</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">48dip</item>
+    </style>
+    <style name="Widget.Sherlock.DropDownItem.Spinner" parent="Sherlock.__Widget.Holo.DropDownItem"/>
+    <style name="Widget.Sherlock.Light.ActionBar" parent="Widget.Sherlock.ActionBar">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Subtitle</item>
+        <item name="background">@drawable/abs__ab_transparent_light_holo</item>
+        <item name="backgroundStacked">@drawable/abs__ab_stacked_transparent_light_holo</item>
+        <item name="backgroundSplit">@drawable/abs__ab_bottom_transparent_light_holo</item>
+        <item name="homeAsUpIndicator">@drawable/abs__ic_ab_back_holo_light</item>
+        <item name="progressBarStyle">@style/Widget.Sherlock.Light.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.Sherlock.Light.ProgressBar</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionBar.Solid">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Subtitle</item>
+        <item name="background">@drawable/abs__ab_solid_light_holo</item>
+        <item name="backgroundStacked">@drawable/abs__ab_stacked_solid_light_holo</item>
+        <item name="backgroundSplit">@drawable/abs__ab_bottom_solid_light_holo</item>
+        <item name="divider">?attr/dividerVertical</item>
+        <item name="progressBarStyle">@style/Widget.Sherlock.Light.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.Sherlock.Light.ProgressBar</item>
+        <item name="progressBarPadding">32dip</item>
+        <item name="itemPadding">8dip</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionBar.Solid.Inverse">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Title.Inverse</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionBar.Subtitle.Inverse</item>
+        <item name="background">@drawable/abs__ab_solid_dark_holo</item>
+        <item name="backgroundStacked">@drawable/abs__ab_stacked_solid_dark_holo</item>
+        <item name="backgroundSplit">@drawable/abs__ab_bottom_solid_inverse_holo</item>
+        <item name="divider">@drawable/abs__list_divider_holo_dark</item>
+        <item name="progressBarStyle">@style/Widget.Sherlock.ProgressBar.Horizontal</item>
+        <item name="indeterminateProgressStyle">@style/Widget.Sherlock.ProgressBar</item>
+        <item name="progressBarPadding">32dip</item>
+        <item name="itemPadding">8dip</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionBar.TabBar" parent="Widget.Sherlock.ActionBar.TabBar"/>
+    <style name="Widget.Sherlock.Light.ActionBar.TabBar.Inverse"/>
+    <style name="Widget.Sherlock.Light.ActionBar.TabText" parent="Widget.Sherlock.ActionBar.TabText"/>
+    <style name="Widget.Sherlock.Light.ActionBar.TabText.Inverse">
+        <item name="android:textColor">?attr/textColorPrimaryInverse</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionBar.TabView" parent="Widget.Sherlock.ActionBar.TabView"/>
+    <style name="Widget.Sherlock.Light.ActionBar.TabView.Inverse"/>
+    <style name="Widget.Sherlock.Light.ActionButton" parent="Widget.Sherlock.ActionButton"/>
+    <style name="Widget.Sherlock.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/abs__btn_cab_done_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionButton.Overflow">
+        <item name="android:src">@drawable/abs__ic_menu_moreoverflow_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionMode" parent="Widget.Sherlock.ActionMode">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Title</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Subtitle</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActionMode.Inverse" parent="Sherlock.__Widget.ActionMode">
+        <item name="titleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Title.Inverse</item>
+        <item name="subtitleTextStyle">@style/TextAppearance.Sherlock.Widget.ActionMode.Subtitle.Inverse</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ActivityChooserView" parent="Widget.Sherlock.ActivityChooserView">
+        <item name="android:background">@drawable/abs__ab_share_pack_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.Button.Small" parent="Widget">
+        <item name="android:textAppearance">?attr/textAppearanceSmall</item>
+        <item name="android:textColor">@color/abs__primary_text_holo_light</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">48dip</item>
+    </style>
+    <style name="Widget.Sherlock.Light.DropDownItem.Spinner" parent="Sherlock.__Widget.Holo.DropDownItem"/>
+    <style name="Widget.Sherlock.Light.ListPopupWindow" parent="Widget">
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_light</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_light</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ListView.DropDown" parent="Sherlock.__Widget.Holo.ListView">
+        <item name="android:divider">@drawable/abs__list_divider_holo_light</item>
+        <item name="android:listSelector">@drawable/abs__list_selector_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.PopupMenu" parent="Widget.Sherlock.Light.ListPopupWindow"/>
+    <style name="Widget.Sherlock.Light.PopupWindow.ActionMode" parent="Widget">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+    <style name="Widget.Sherlock.Light.ProgressBar" parent="Widget.Sherlock.ProgressBar"/>
+    <style name="Widget.Sherlock.Light.ProgressBar.Horizontal" parent="Widget.Sherlock.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/abs__progress_horizontal_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.SearchAutoCompleteTextView" parent="Sherlock.__Widget.SearchAutoCompleteTextView">
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_light</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.Light.Spinner.DropDown.ActionBar" parent="Sherlock.__Widget.Holo.Spinner">
+        <item name="android:background">@drawable/abs__spinner_ab_holo_light</item>
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_light</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_light</item>
+    </style>
+    <style name="Widget.Sherlock.ListPopupWindow" parent="Widget">
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_dark</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_dark</item>
+        <item name="android:dropDownVerticalOffset">0dip</item>
+        <item name="android:dropDownHorizontalOffset">0dip</item>
+        <item name="android:dropDownWidth">wrap_content</item>
+    </style>
+    <style name="Widget.Sherlock.ListView.DropDown" parent="Sherlock.__Widget.Holo.ListView"/>
+    <style name="Widget.Sherlock.PopupMenu" parent="Widget.Sherlock.ListPopupWindow"/>
+    <style name="Widget.Sherlock.PopupWindow.ActionMode" parent="Widget"/>
+    <style name="Widget.Sherlock.ProgressBar" parent="android:Widget.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/abs__progress_medium_holo</item>
+        <item name="android:animationResolution">33</item>
+    </style>
+    <style name="Widget.Sherlock.ProgressBar.Horizontal" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/abs__progress_horizontal_holo_dark</item>
+        <!-- item name="android:indeterminateDrawable">@drawable/abs__progress_indeterminate_horizontal_holo</item -->
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+    <style name="Widget.Sherlock.SearchAutoCompleteTextView" parent="Sherlock.__Widget.SearchAutoCompleteTextView">
+        <item name="android:dropDownSelector">@drawable/abs__list_selector_holo_dark</item>
+        <item name="android:popupBackground">@drawable/abs__menu_dropdown_panel_holo_dark</item>
+    </style>
+    <style name="Widget.Sherlock.Spinner.DropDown.ActionBar" parent="Sherlock.__Widget.Holo.Spinner">
+        <item name="android:background">@drawable/abs__spinner_ab_holo_dark</item>
+    </style>
+    <style name="Widget.Sherlock.TextView.SpinnerItem" parent="Widget">
+        <item name="android:textAppearance">@style/TextAppearance.Sherlock.Widget.TextView.SpinnerItem</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+</resources>

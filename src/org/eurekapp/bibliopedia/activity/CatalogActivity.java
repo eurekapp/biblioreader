@@ -53,7 +53,7 @@ import static jedi.functional.FunctionalPrimitives.isEmpty;
 import static jedi.option.Options.none;
 import static jedi.option.Options.option;
 
-public class CatalogActivity extends PageTurnerActivity implements CatalogParent {
+public class CatalogActivity extends BibliopediaActivity implements CatalogParent {
 
     private static final Logger LOG = LoggerFactory
             .getLogger("CatalogActivity");
@@ -74,7 +74,7 @@ public class CatalogActivity extends PageTurnerActivity implements CatalogParent
     private String baseFeedTitle;
 
     @Override
-    protected void onCreatePageTurnerActivity(Bundle savedInstanceState) {
+    protected void onCreateBibliopediaActivity(Bundle savedInstanceState) {
         hideDetailsView();
 
         //loadCustomSitesFeed();
@@ -317,7 +317,6 @@ public class CatalogActivity extends PageTurnerActivity implements CatalogParent
 
         if ( ! href.equals( config.getBaseOPDSFeed() ) ) {
             fragmentTransaction.addToBackStack(baseURL);
-
         }
 
         fragmentTransaction.commit();

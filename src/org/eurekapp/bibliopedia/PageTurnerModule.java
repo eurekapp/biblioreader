@@ -51,7 +51,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /**
- * This is the main Guice module for PageTurner.
+ * This is the main Guice module for Bibliopedia.
  * 
  * This module determines the implementations used to
  * inject dependencies used in actually running the app.

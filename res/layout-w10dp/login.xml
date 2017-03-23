@@ -18,6 +18,13 @@
         android:singleLine="true"
         android:hint="Correo" />
 
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:entries="@array/institutions"/>
+
+
 
 
 </LinearLayout>

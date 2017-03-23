@@ -80,7 +80,7 @@ public class PlatformUtil {
 
         if ( android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES. HONEYCOMB ) {
             android.content.ClipboardManager clipboard = (android.content.ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
-            android.content.ClipData clip = ClipData.newPlainText("PageTurner copied text", text);
+            android.content.ClipData clip = ClipData.newPlainText("Bibliopedia copied text", text);
             clipboard.setPrimaryClip(clip);
         }
     }

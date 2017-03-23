@@ -30,6 +30,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.NotificationCompat;
 import android.util.DisplayMetrics;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -43,6 +44,13 @@ import com.google.inject.Inject;
 import com.google.inject.Provider;
 import jedi.option.Option;
 
+import org.apache.http.HttpResponse;
+import org.apache.http.HttpStatus;
+import org.apache.http.StatusLine;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.DefaultHttpClient;
 import org.eurekapp.nucular.atom.Entry;
 import org.eurekapp.nucular.atom.Link;
 import org.eurekapp.bibliopedia.Configuration;
@@ -57,8 +65,12 @@ import org.eurekapp.bibliopedia.catalog.LoadThumbnailTask;
 import roboguice.inject.InjectView;
 
 import javax.annotation.Nullable;
+
+import java.io.ByteArrayOutputStream;
 import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
+import java.net.URISyntaxException;
 import java.net.URL;
 import java.util.Random;
 
@@ -243,10 +255,19 @@ public class BookDetailsFragment extends RoboSherlockFragment implements LoadFee
             return;
         }
 
+
+
+
         final DownloadFileTask task = this.downloadFileTaskProvider.get();
 
         final Entry entry = feed.getEntries().get(0);
         String title = entry.getTitle();
+        String author = entry.getAuthor().getName();
+
+
+        //http://10.7.77.221:8080/woop4/webresources/entities.borrowed/borrow/feli/libro1autor1
+        //borrow
+
 
         if ( !openOnCompletion && Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH ) {
             task.setCallBack( new NotificationBarCallback(getActivity().getBaseContext(), title, openOnCompletion) );

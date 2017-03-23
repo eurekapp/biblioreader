@@ -29,12 +29,12 @@ import org.eurekapp.bibliopedia.fragment.BookDetailsFragment;
 
 import java.io.Serializable;
 
-public class CatalogBookDetailsActivity extends PageTurnerActivity implements CatalogParent {
+public class CatalogBookDetailsActivity extends BibliopediaActivity implements CatalogParent {
 
     private BookDetailsFragment detailsFragment;
 
     @Override
-    protected void onCreatePageTurnerActivity(Bundle savedInstanceState) {
+    protected void onCreateBibliopediaActivity(Bundle savedInstanceState) {
         if (getResources().getConfiguration().orientation
                 == android.content.res.Configuration.ORIENTATION_LANDSCAPE) {
             // If the screen is now in landscape mode, we can show the

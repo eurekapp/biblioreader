@@ -42,7 +42,7 @@ import java.util.List;
 
 import static jedi.functional.FunctionalPrimitives.forEach;
 
-public class ReadingActivity extends PageTurnerActivity {
+public class ReadingActivity extends BibliopediaActivity {
 
     @InjectFragment(R.id.fragment_reading)
     private ReadingFragment readingFragment;
@@ -98,6 +98,7 @@ public class ReadingActivity extends PageTurnerActivity {
             menuItems.add( new NavigationCallback("") );
         }
 
+        //menuItems.add( new NavigationCallback("institucion"));
         String nowReading = getString( R.string.now_reading, config.getLastReadTitle() );
         NavigationCallback readingCallback = new NavigationCallback(nowReading);
         menuItems.add( readingCallback );
@@ -167,9 +168,9 @@ public class ReadingActivity extends PageTurnerActivity {
     }
 
     @Override
-    protected void onCreatePageTurnerActivity(Bundle savedInstanceState) {
+    protected void onCreateBibliopediaActivity(Bundle savedInstanceState) {
 
-        Class<? extends PageTurnerActivity> lastActivityClass = config.getLastActivity();
+        Class<? extends BibliopediaActivity> lastActivityClass = config.getLastActivity();
 
         if ( !config.isAlwaysOpenLastBook() && lastActivityClass != null
                 && lastActivityClass != ReadingActivity.class

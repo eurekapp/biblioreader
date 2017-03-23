@@ -21,7 +21,7 @@ package org.eurekapp.bibliopedia.activity;
 import android.os.Bundle;
 import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockFragmentActivity;
 
-import org.eurekapp.bibliopedia.PageTurner;
+import org.eurekapp.bibliopedia.Bibliopedia;
 import org.eurekapp.bibliopedia.Configuration;
 import org.eurekapp.bibliopedia.R;
 
@@ -32,7 +32,7 @@ public class FileBrowseActivity extends RoboSherlockFragmentActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		Configuration config = RoboGuice.getInjector(this).getInstance(Configuration.class); 
-		PageTurner.changeLanguageSetting(this, config);
+		Bibliopedia.changeLanguageSetting(this, config);
 		setTheme( config.getTheme() );
 		
 		super.onCreate(savedInstanceState);

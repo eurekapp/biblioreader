@@ -26,7 +26,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Helper class which converts media-button events into PageTurner-specific events.
+ * Helper class which converts media-button events into Bibliopedia-specific events.
  * 
  * Since a BroadCastReceiver for MediaButton events has to be specified
  * by class-name, the created instance will have no access to the activity.

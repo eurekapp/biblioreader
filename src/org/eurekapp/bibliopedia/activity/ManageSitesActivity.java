@@ -35,7 +35,7 @@ import com.google.inject.Inject;
 
 import org.eurekapp.bibliopedia.Configuration;
 import org.eurekapp.bibliopedia.CustomOPDSSite;
-import org.eurekapp.bibliopedia.PageTurner;
+import org.eurekapp.bibliopedia.Bibliopedia;
 import org.eurekapp.bibliopedia.PlatformUtil;
 
 import roboguice.RoboGuice;
@@ -55,7 +55,7 @@ public class ManageSitesActivity extends RoboSherlockListActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		Configuration config = RoboGuice.getInjector(this).getInstance(Configuration.class); 
-		PageTurner.changeLanguageSetting(this, config);
+		Bibliopedia.changeLanguageSetting(this, config);
 		setTheme( config.getTheme() );
 		
 		super.onCreate(savedInstanceState);		

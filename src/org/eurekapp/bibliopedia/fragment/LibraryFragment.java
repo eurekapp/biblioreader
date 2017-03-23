@@ -48,10 +48,10 @@ import jedi.option.Option;
 
 import org.eurekapp.bibliopedia.Configuration;
 import org.eurekapp.bibliopedia.PlatformUtil;
+import org.eurekapp.bibliopedia.activity.BibliopediaActivity;
 import org.eurekapp.bibliopedia.activity.CatalogActivity;
 import org.eurekapp.bibliopedia.activity.FileBrowseActivity;
 import org.eurekapp.bibliopedia.activity.LibraryActivity;
-import org.eurekapp.bibliopedia.activity.PageTurnerActivity;
 import org.eurekapp.bibliopedia.activity.ReadingActivity;
 import org.eurekapp.bibliopedia.library.CleanFilesTask;
 import org.eurekapp.bibliopedia.library.ImportCallback;
@@ -693,7 +693,7 @@ public class LibraryFragment extends RoboSherlockFragment implements ImportCallb
 
                 //aca se manda a la descarga de libros
                 builder.setPositiveButton( android.R.string.yes, (dialogInterface, i) ->
-                    ( (PageTurnerActivity) getSherlockActivity() ).launchActivity( CatalogActivity.class ));
+                    ( (BibliopediaActivity) getSherlockActivity() ).launchActivity( CatalogActivity.class ));
 
                 builder.setNegativeButton( android.R.string.no, null );
 

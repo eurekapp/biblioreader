@@ -14,8 +14,8 @@
     
     <string name="show_toc">نمایش فهرست</string> <!-- Show TOC -->   
     <string name="rolling_blind">مرور خودکار</string> <!-- Auto-scroll -->
-    <string name="about">درباره</string> <!-- About PageTurner -->
-    <string name="about_gpl">PageTurner نرم‌افزار آزادی‌ست بر مبنای اجازه‌نامهٔ GPL v3</string> <!-- PageTurner is free software under the GPL v3. -->
+    <string name="about">درباره</string> <!-- About Bibliopedia -->
+    <string name="about_gpl">PageTurner نرم‌افزار آزادی‌ست بر مبنای اجازه‌نامهٔ GPL v3</string> <!-- Bibliopedia is free software under the GPL v3. -->
     <string name="error_open_bk">خطا در باز کردن کتاب: %s</string> <!-- Error opening book: %s -->
     
     <string name="dictionary_lookup">مراجعه واژه‌نامه</string> <!-- Look up in Dictionary -->

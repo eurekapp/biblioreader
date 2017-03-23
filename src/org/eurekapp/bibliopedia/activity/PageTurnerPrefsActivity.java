@@ -25,7 +25,7 @@ import android.os.Bundle;
 import android.preference.*;
 import com.github.rtyley.android.sherlock.roboguice.activity.RoboSherlockPreferenceActivity;
 import org.eurekapp.bibliopedia.Configuration;
-import org.eurekapp.bibliopedia.PageTurner;
+import org.eurekapp.bibliopedia.Bibliopedia;
 import org.eurekapp.bibliopedia.R;
 import roboguice.RoboGuice;
 
@@ -34,7 +34,7 @@ public class PageTurnerPrefsActivity extends RoboSherlockPreferenceActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		Configuration config = RoboGuice.getInjector(this).getInstance(Configuration.class); 
-		PageTurner.changeLanguageSetting(this, config);
+		Bibliopedia.changeLanguageSetting(this, config);
 		setTheme( config.getTheme() );
 		
 		super.onCreate(savedInstanceState);
@@ -48,7 +48,7 @@ public class PageTurnerPrefsActivity extends RoboSherlockPreferenceActivity {
 	 	   editor.commit();			
 		}
 		
-		addPreferencesFromResource(R.xml.pageturner_prefs);
+		addPreferencesFromResource(R.xml.bibliopedia_prefs);
 
 		final PreferenceScreen screen = getPreferenceScreen();
 		if(!Configuration.IS_NOOK_TOUCH) {

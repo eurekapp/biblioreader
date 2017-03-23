@@ -22,7 +22,7 @@ import org.eurekapp.bibliopedia.R;
 import org.eurekapp.bibliopedia.fragment.LibraryFragment;
 import roboguice.inject.InjectFragment;
 
-public class LibraryActivity extends PageTurnerActivity {
+public class LibraryActivity extends BibliopediaActivity {
 
     @InjectFragment(R.id.fragment_library)
     private LibraryFragment libraryFragment;

@@ -110,19 +110,16 @@ idea {
 android {
     buildToolsVersion "19.1.0"
     compileSdkVersion 19
-
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
     defaultConfig {
         testInstrumentationRunner "com.google.android.apps.common.testing.testrunner.GoogleInstrumentationTestRunner"
-        minSdkVersion 7
+        minSdkVersion 9
 
         targetSdkVersion 19
     }
-
     sourceSets {
         main {
             manifest.srcFile 'AndroidManifest.xml'
@@ -147,35 +144,60 @@ android {
             manifest.srcFile 'AndroidManifest.xml'
             res.srcDirs = ['res']
             assets.srcDirs = ['assets']
-        } 
+        }
 
     }
-
     packagingOptions {
-	    exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE.txt'
-	}
-
-    lintOptions {
-          abortOnError false
     }
-
+    lintOptions {
+        abortOnError false
+    }
     signingConfigs {
         release {
-            if ( System.getenv("KEYSTORE") ) {
+            if (System.getenv("KEYSTORE")) {
                 storeFile file(System.getenv("KEYSTORE"))
                 storePassword System.getenv("KEYSTORE_PASSWORD")
                 keyAlias System.getenv("KEY_ALIAS")
                 keyPassword System.getenv("KEY_PASSWORD")
             }
+            keyAlias 'release'
+            keyPassword 'eureka'
+            storeFile file('C:/Users/Felipe/Dropbox/Bibliopolis/Biblio/bipokey.jks')
+            storePassword 'eureka'
+        }
+        config {
+        }
+        config1 {
+            keyAlias 'Escolar'
+            keyPassword 'escolar'
+            storePassword 'escolar'
         }
     }
-
     buildTypes {
         release {
-            if ( System.getenv("KEYSTORE") ) {
+            if (System.getenv("KEYSTORE")) {
                 signingConfig signingConfigs.release
             }
+        }
+    }
+    productFlavors {
+        escolar {
+            minSdkVersion 9
+            applicationId 'org.eurekapp.bibliopedia.escolar'
+            signingConfig signingConfigs.config1
+            targetSdkVersion 19
+            versionCode 2
+            versionName 'escolar'
+        }
+        sanandres {
+            minSdkVersion 9
+            applicationId 'org.eurekapp.bibliopedia.sai'
+            signingConfig signingConfigs.config1
+            targetSdkVersion 19
+            versionCode 1
+            versionName 'sai'
         }
     }
 }
